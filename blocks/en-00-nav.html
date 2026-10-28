@@ -6,6 +6,9 @@
 .cc-nav .cc-lang{display:flex;gap:14px;margin-left:12px;font-size:15px;letter-spacing:.06em}
 .cc-nav .cc-lang a{color:#68635c}
 .cc-nav .cc-lang a.cc-on{color:#b03d2e;font-weight:500;text-underline-offset:5px}
+/* phones: Hostnet's own hamburger lists every page in every language, so hide it and show this menu instead */
+[class*="MobileHeader_menuIconContainer"],[class*="MobileHeader_dummyMenuIconContainer"],[class*="MobileHeaderMenu_mobileMenu"]{display:none!important}
+@media (max-width:760px){.cc-nav{justify-content:flex-start;gap:4px 20px;font-size:16px}.cc-nav .cc-lang{margin-left:0}}
 </style>
 <nav class="cc-nav" id="cc-nav"></nav>
 <script>
