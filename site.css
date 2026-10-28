@@ -19,7 +19,7 @@ body{font-family:"Jost","Futura","Century Gothic",sans-serif}
 .cc-nav .cc-lang a.cc-on{color:#b03d2e;font-weight:500;text-underline-offset:5px}
 .cc-nav .soon{opacity:.45;cursor:default}
 
-main.wrap{padding-top:40px}
+main.wrap{padding-top:40px;padding-bottom:56px}
 
 .site-foot{background:#b03d2e;padding:56px 0}
 
