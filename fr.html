@@ -17,7 +17,7 @@
 </div></header>
 <main class="wrap">
 <style>
-.cc-hero{font-family:"Jost","Futura","Century Gothic",sans-serif;color:#3c3c3c;font-size:17px;line-height:1.7;display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center;padding:36px 0 70px;box-sizing:border-box}
+.cc-hero{font-family:"Jost","Futura","Century Gothic",sans-serif;color:#3c3c3c;font-size:17px;line-height:1.7;display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center;padding:48px 0 72px;box-sizing:border-box}
 .cc-hero *{box-sizing:border-box}
 .cc-hero h1{font-family:inherit;font-weight:300;font-size:clamp(46px,7.4vw,96px);line-height:.98;letter-spacing:-.01em;margin:0;color:#3c3c3c;text-transform:none}
 .cc-hero h1 span{display:block}
@@ -27,13 +27,11 @@
 .cc-hero .cc-btn{display:inline-flex;align-items:center;border-radius:999px;padding:14px 30px;font-size:16.5px;font-weight:500;letter-spacing:.02em;background:#b03d2e;color:#fff;text-decoration:none}
 .cc-hero .cc-btn:hover{background:#963225}
 .cc-hero .cc-link{font-size:16.5px;color:#b03d2e;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:2px}
-.cc-hero .cc-portrait{position:relative;justify-self:end;width:min(100%,402px);padding:22px}
-.cc-hero .cc-portrait::before,.cc-hero .cc-portrait::after{content:"";position:absolute;width:62%;height:62%;background:#eac089}
-.cc-hero .cc-portrait::before{left:0;top:0}
-.cc-hero .cc-portrait::after{right:0;bottom:0}
-.cc-hero .cc-img{position:relative;z-index:1;aspect-ratio:4/5;width:100%;background:#e9e5de;display:grid;place-items:center;text-align:center;color:#68635c;font-size:15px;padding:14%}
+.cc-hero .cc-portrait{position:relative;justify-self:end;width:min(100%,380px);padding:0 0 22px 22px}
+.cc-hero .cc-portrait::before{content:"";position:absolute;left:0;bottom:0;width:78%;height:78%;background:#eac089}
+.cc-hero .cc-img{position:relative;aspect-ratio:4/5;width:100%;background:#e9e5de;display:grid;place-items:center;text-align:center;color:#68635c;font-size:15px;padding:14%}
 .cc-hero .cc-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 35%}
-@media (max-width:760px){.cc-hero{grid-template-columns:1fr;gap:36px;padding:24px 0 48px}.cc-hero .cc-portrait{justify-self:start;width:min(100%,322px);padding:16px}}
+@media (max-width:760px){.cc-hero{grid-template-columns:1fr;gap:36px;padding:24px 0 48px}.cc-hero .cc-portrait{justify-self:start;width:min(100%,300px)}}
 </style>
 <div class="cc-hero">
   <div>
