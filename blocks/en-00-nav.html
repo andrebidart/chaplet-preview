@@ -1,0 +1,28 @@
+<style>
+.cc-nav{font-family:"Jost","Futura","Century Gothic",sans-serif;display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-end;gap:8px 28px;min-height:100%;font-size:16.5px}
+.cc-nav a{color:#3c3c3c;text-decoration:none;padding:4px 0}
+.cc-nav a:hover{color:#b03d2e}
+.cc-nav a.cc-on{text-decoration:underline;text-decoration-color:#b03d2e;text-underline-offset:7px}
+.cc-nav .cc-lang{display:flex;gap:14px;margin-left:12px;font-size:15px;letter-spacing:.06em}
+.cc-nav .cc-lang a{color:#68635c}
+.cc-nav .cc-lang a.cc-on{color:#b03d2e;font-weight:500;text-underline-offset:5px}
+</style>
+<nav class="cc-nav" id="cc-nav"></nav>
+<script>
+(function(){
+  var S={
+    en:[["Home","/"],["Repertoire","/repertoire"],["Performances","/performances"],["Contact","/contact"]],
+    fr:[["Accueil","/fr"],["Répertoire","/fr-repertoire"],["Spectacles","/fr-spectacles"],["Contact","/fr-contact"]],
+    nl:[["Home","/nl"],["Repertoire","/nl-repertoire"],["Optredens","/nl-optredens"],["Contact","/nl-contact"]]
+  };
+  var p=(location.pathname||"/").replace(/\/+$/,"")||"/";
+  var seg=p.split("/").pop();
+  var lang=/^fr(-|$)/.test(seg)?"fr":/^nl(-|$)/.test(seg)?"nl":"en";
+  var nav=document.getElementById("cc-nav"); if(!nav) return;
+  var h="";
+  S[lang].forEach(function(i){h+='<a href="'+i[1]+'"'+(p===i[1]?' class="cc-on"':'')+'>'+i[0]+'</a>';});
+  h+='<span class="cc-lang">';
+  [["FR","fr","/fr"],["NL","nl","/nl"],["EN","en","/"]].forEach(function(l){h+='<a href="'+l[2]+'"'+(lang===l[1]?' class="cc-on"':'')+'>'+l[0]+'</a>';});
+  nav.innerHTML=h+'</span>';
+})();
+</script>
