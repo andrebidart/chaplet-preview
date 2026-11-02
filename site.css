@@ -7,9 +7,9 @@ body{font-family:"Jost","Futura","Century Gothic",sans-serif}
 .pv-bar{background:#3c3c3c;color:#fff;font-family:"Jost",sans-serif;font-size:14px;text-align:center;padding:8px 16px}
 .pv-bar span{opacity:.75}
 
-.site-head{border-bottom:2px solid #eac089;background:#fff}
+.site-head{border-bottom:1px solid #eac089;background:#fff}
 .site-head .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 32px;padding-top:24px;padding-bottom:24px}
-.logo{font-family:"Trebuchet MS","Jost",sans-serif;font-weight:700;font-size:clamp(24px,3vw,34px);letter-spacing:.12em;color:#3c3c3c;text-decoration:none}
+.logo{font-family:"Newsreader",Georgia,serif;font-style:italic;font-weight:400;font-size:clamp(30px,3.4vw,40px);letter-spacing:-.005em;line-height:1;color:#3c3c3c;text-decoration:none}
 
 .cc-nav{display:flex;flex-wrap:wrap;align-items:center;gap:8px 28px;font-size:16.5px}
 .cc-nav a{color:#3c3c3c;text-decoration:none;padding:4px 0}
