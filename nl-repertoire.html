@@ -7,7 +7,7 @@
 <title>Repertoire | Christophe Chaplet</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Newsreader:ital,opsz,wght@1,6..72,300;1,6..72,400&display=swap">
-<link rel="stylesheet" href="site.css?v=20261102">
+<link rel="stylesheet" href="site.css?v=20261103">
 </head>
 <body>
 <div class="pv-bar">Voorbeeld van de nieuwe website, nog niet live. <span>Het contactformulier werkt niet in dit voorbeeld.</span></div>
@@ -19,53 +19,62 @@
 <style>
 .cc-page{font-family:"Jost","Futura","Century Gothic",sans-serif;color:#3c3c3c;font-size:17px;line-height:1.7}
 .cc-page *{box-sizing:border-box}
-.cc-page .cc-head{display:grid;grid-template-columns:200px 1fr;gap:64px;padding:40px 0 36px}
-.cc-page .cc-head > *,.cc-page .cc-artist > *{min-width:0}
-.cc-page .cc-label{font-size:15px;font-weight:500;color:#b03d2e;letter-spacing:.03em}
-.cc-page h1{font-family:inherit;font-weight:300;font-size:clamp(38px,5vw,56px);line-height:1.05;margin:0;color:#3c3c3c;text-transform:none;letter-spacing:0}
+.cc-page .cc-head{padding:40px 0 36px}
+.cc-page h1{font-family:"Newsreader",Georgia,serif;font-style:italic;font-weight:300;font-size:clamp(30px,3.4vw,40px);line-height:1.1;margin:0;color:#68635c;text-transform:none;letter-spacing:0}
 .cc-page .cc-intro{margin:12px 0 0;max-width:46ch;font-size:18px}
-.cc-page .cc-rep{display:grid;padding-bottom:40px}
-.cc-page .cc-artist{display:grid;grid-template-columns:200px 1fr;gap:64px;padding:14px 0;border-top:1px solid #e7e2da;align-items:baseline}
-.cc-page .cc-artist b{font-weight:500;font-size:17.5px}
-.cc-page .cc-artist span{font-family:"Newsreader",Georgia,serif;font-style:italic;font-weight:400;font-size:20px;line-height:1.45}
-.cc-page .cc-artist span em{font-family:"Jost",sans-serif;font-style:normal;font-size:15px;color:#68635c;margin-right:4px}
-.cc-page .cc-own{border-top:1px solid #b03d2e;margin-top:10px;padding-top:20px}
-.cc-page .cc-own b{color:#b03d2e}
-@media (max-width:760px){.cc-page .cc-head{grid-template-columns:1fr;gap:14px;padding:24px 0}.cc-page .cc-artist{grid-template-columns:1fr;gap:2px}}
+.cc-page .cc-rep{display:grid}
+.cc-page .cc-artist{display:grid;grid-template-columns:240px 1fr;gap:48px;padding:16px 0;border-top:1px solid #f0ece5;align-items:baseline}
+.cc-page .cc-artist > *{min-width:0}
+.cc-page .cc-artist b{font-family:"Newsreader",Georgia,serif;font-style:italic;font-weight:400;font-size:24px;line-height:1.25}
+.cc-page .cc-artist span{font-family:"Newsreader",Georgia,serif;font-style:italic;font-weight:400;font-size:20px;line-height:1.6;color:rgba(60,60,60,.68)}
+.cc-page .cc-artist i,.cc-page .cc-own i{font-style:normal;color:#eac089;margin:0 .4em}
+.cc-page .cc-own{border:1px solid #b03d2e;padding:48px;margin:56px 0 72px;display:grid;grid-template-columns:240px 1fr;gap:48px}
+.cc-page .cc-own > *{min-width:0}
+.cc-page .cc-own h2{font-family:"Newsreader",Georgia,serif;font-style:italic;font-weight:300;font-size:34px;line-height:1.15;margin:0;color:#b03d2e;text-transform:none;letter-spacing:0}
+.cc-page .cc-own p{font-size:15px;color:#68635c;margin:10px 0 0}
+.cc-page .cc-own .cc-songs{font-family:"Newsreader",Georgia,serif;font-style:italic;font-size:22px;line-height:1.7}
+@media (max-width:760px){
+  .cc-page .cc-head{padding:24px 0}
+  .cc-page .cc-artist,.cc-page .cc-own{grid-template-columns:1fr;gap:6px}
+  .cc-page .cc-own{padding:28px 22px;gap:16px}
+}
 </style>
 <div class="cc-page">
   <div class="cc-head">
-    <span class="cc-label">Repertoire</span>
     <div><h1>Vraag naar het programma!</h1><p class="cc-intro">Chansons van de 19de tot de 21ste eeuw.</p></div>
   </div>
   <div class="cc-rep">
-    <div class="cc-artist"><b>C. Trenet</b><span>Ménilmontant, Je chante, Le soleil et la lune, Que reste-t-il de nos amours ?, Débit de l’eau débit de lait, Y’a d’la joie, La folle complainte, Annie Anna, La mer, N’y pensez pas trop, Le grand café, J’ai ta main, Douce France, Le vieux piano de la plage, Revoir Paris, Chanson d’automne, La romance de Paris, Pourquoi m’avoir donné rendez-vous sous la pluie, Vous qui passez sans me voir</span></div>
-    <div class="cc-artist"><b>G. Brassens</b><span>Le parapluie, J’ai rendez-vous, Brave Margot, La mauvaise réputation, Le petit cheval, Bancs publics, Gastibelza, La chasse aux papillons, Gare au gorille, La première fille, Chanson pour l’Auvergnat, Les funérailles d’antan, Je m’suis fait tout p’tit, Les sabots d’Hélène, Auprès de mon arbre, Je suis un voyou, La légende de la nonne</span></div>
-    <div class="cc-artist"><b>B. Lapointe</b><span>T’as pas tout dit, Monsieur l’agent, Ça va ça vient, Framboise, Aubade à Lydie en do, Aragon et Castille, Ta Katie t’a quitté, La fille du pêcheur, J’ai fantaisie, Le papa du papa, Madame Mado m’a dit, Le marinier, Le lundi je mendie, Marcelle, Tube de toilette</span></div>
-    <div class="cc-artist"><b>J. Brel</b><span>Le plat pays, Vesoul, Rosa, Amsterdam, Madeleine, Ces gens-là, Les bonbons</span></div>
-    <div class="cc-artist"><b>C. Aznavour</b><span>Les comédiens, La bohème, Mes emmerdes, Parce que, Emmenez-moi</span></div>
-    <div class="cc-artist"><b>L. Ferré</b><span>Paris canaille, Le pont Mirabeau, Jolie môme, L’étrangère, Il n’aurait fallu, Ostende, Est-ce ainsi que les hommes vivent, Le piano du pauvre</span></div>
-    <div class="cc-artist"><b>S. Gainsbourg</b><span>Le poinçonneur des Lilas, La javanaise, La gadoue, Je suis venu te dire, Les petits papiers, Fuir le bonheur, Ces petits riens</span></div>
-    <div class="cc-artist"><b>B. Vian</b><span>Le cinématographe, La complainte du progrès, La java des bombes atomiques, J’suis snob, On n’est pas là pour se faire engueuler</span></div>
-    <div class="cc-artist"><b>J. Prévert</b><span>Les feuilles mortes, L’inventaire, La pêche à la baleine, À l’enterrement d’une feuille morte, Les enfants qui s’aiment, En sortant de l’école</span></div>
-    <div class="cc-artist"><b>G. Béart</b><span>Le bal chez Temporel, À Saint-Germain-des-Prés, Qui suis-je, Rotatives, L’eau vive, Les souliers, Vous</span></div>
-    <div class="cc-artist"><b>A. Bruant</b><span>À la Bastille, À la Villette, Le Chat noir, À Montparnasse, À Poissy, Ah ! les salauds</span></div>
-    <div class="cc-artist"><b>Mireille / J. Nohain</b><span>Une demoiselle sur une balançoire, Quand un vicomte, Puisque vous partez en voyage, Couchés dans le foin, Parce que ça me donne du courage, Ce petit chemin</span></div>
-    <div class="cc-artist"><b>Y. Montand</b><span>Trois petites notes de musique, Les grands boulevards, La chansonnette</span></div>
-    <div class="cc-artist"><b>N. Ferrer</b><span>La maison près de la fontaine, Je vends des robes, Les cornichons</span></div>
-    <div class="cc-artist"><b>J. Dutronc</b><span>Paris s’éveille, Le petit jardin, C’est le temps de l’amour</span></div>
-    <div class="cc-artist"><b>Mouloudji</b><span>Un jour tu verras, Rue de Lappe, Rue Saint-Vincent</span></div>
-    <div class="cc-artist"><b>J. Moreau</b><span>Le tourbillon, J’ai la mémoire qui flanche</span></div>
-    <div class="cc-artist"><b>Barbara</b><span>Gare de Lyon, Elle vendait des p’tits gâteaux</span></div>
-    <div class="cc-artist"><b>J. Ferrat</b><span>Ma môme, La montagne</span></div>
-    <div class="cc-artist"><b>J. Constantin</b><span>Mon manège à moi</span></div>
-    <div class="cc-artist"><b>F. Deguelt</b><span>Le bal de la marine</span></div>
-    <div class="cc-artist"><b>Diverse chansons</b><span>Mon amant de Saint-Jean, Le fiacre, Domino, Si tu vas à Rio, C’est magnifique, Les Champs-Élysées, Le plus beau tango du monde, La java bleue, Qu’est-ce qu’on attend, La dame de Haute-Savoie, Le petit vin blanc, Le bikini léopard, La vie en rose, Je suis seul ce soir, J’attendrai, Clopin-clopant, Mistral gagnant</span></div>
-    <div class="cc-artist cc-own"><b>Christophe Chaplet</b><span><em>Eigen chansons:</em> Monsieur Dupont, Cigarette de l’après-midi, À Saint-Médard, Aux Sables-d’Olonne, Ton halogène, Du bout du quai, Ton répondeur, Boulevard de Sébastopol, Bilbao, P’tit Louis, Le bruit des rues, Mon animal de compagnie, Ursule, Les majorettes</span></div>
+    <div class="cc-artist"><b>Charles Trenet</b><span>Ménilmontant<i>·</i>Je chante<i>·</i>Le soleil et la lune<i>·</i>Que reste-t-il de nos amours ?<i>·</i>Débit de l’eau débit de lait<i>·</i>Y’a d’la joie<i>·</i>La folle complainte<i>·</i>Annie Anna<i>·</i>La mer<i>·</i>N’y pensez pas trop<i>·</i>Le grand café<i>·</i>J’ai ta main<i>·</i>Douce France<i>·</i>Le vieux piano de la plage<i>·</i>Revoir Paris<i>·</i>Chanson d’automne<i>·</i>La romance de Paris<i>·</i>Pourquoi m’avoir donné rendez-vous sous la pluie<i>·</i>Vous qui passez sans me voir</span></div>
+    <div class="cc-artist"><b>Georges Brassens</b><span>Le parapluie<i>·</i>J’ai rendez-vous<i>·</i>Brave Margot<i>·</i>La mauvaise réputation<i>·</i>Le petit cheval<i>·</i>Bancs publics<i>·</i>Gastibelza<i>·</i>La chasse aux papillons<i>·</i>Gare au gorille<i>·</i>La première fille<i>·</i>Chanson pour l’Auvergnat<i>·</i>Les funérailles d’antan<i>·</i>Je m’suis fait tout p’tit<i>·</i>Les sabots d’Hélène<i>·</i>Auprès de mon arbre<i>·</i>Je suis un voyou<i>·</i>La légende de la nonne</span></div>
+    <div class="cc-artist"><b>Boby Lapointe</b><span>T’as pas tout dit<i>·</i>Monsieur l’agent<i>·</i>Ça va ça vient<i>·</i>Framboise<i>·</i>Aubade à Lydie en do<i>·</i>Aragon et Castille<i>·</i>Ta Katie t’a quitté<i>·</i>La fille du pêcheur<i>·</i>J’ai fantaisie<i>·</i>Le papa du papa<i>·</i>Madame Mado m’a dit<i>·</i>Le marinier<i>·</i>Le lundi je mendie<i>·</i>Marcelle<i>·</i>Tube de toilette</span></div>
+    <div class="cc-artist"><b>Jacques Brel</b><span>Le plat pays<i>·</i>Vesoul<i>·</i>Rosa<i>·</i>Amsterdam<i>·</i>Madeleine<i>·</i>Ces gens-là<i>·</i>Les bonbons</span></div>
+    <div class="cc-artist"><b>Charles Aznavour</b><span>Les comédiens<i>·</i>La bohème<i>·</i>Mes emmerdes<i>·</i>Parce que<i>·</i>Emmenez-moi</span></div>
+    <div class="cc-artist"><b>Léo Ferré</b><span>Paris canaille<i>·</i>Le pont Mirabeau<i>·</i>Jolie môme<i>·</i>L’étrangère<i>·</i>Il n’aurait fallu<i>·</i>Ostende<i>·</i>Est-ce ainsi que les hommes vivent<i>·</i>Le piano du pauvre</span></div>
+    <div class="cc-artist"><b>Serge Gainsbourg</b><span>Le poinçonneur des Lilas<i>·</i>La javanaise<i>·</i>La gadoue<i>·</i>Je suis venu te dire<i>·</i>Les petits papiers<i>·</i>Fuir le bonheur<i>·</i>Ces petits riens</span></div>
+    <div class="cc-artist"><b>Boris Vian</b><span>Le cinématographe<i>·</i>La complainte du progrès<i>·</i>La java des bombes atomiques<i>·</i>J’suis snob<i>·</i>On n’est pas là pour se faire engueuler</span></div>
+    <div class="cc-artist"><b>Jacques Prévert</b><span>Les feuilles mortes<i>·</i>L’inventaire<i>·</i>La pêche à la baleine<i>·</i>À l’enterrement d’une feuille morte<i>·</i>Les enfants qui s’aiment<i>·</i>En sortant de l’école</span></div>
+    <div class="cc-artist"><b>Guy Béart</b><span>Le bal chez Temporel<i>·</i>À Saint-Germain-des-Prés<i>·</i>Qui suis-je<i>·</i>Rotatives<i>·</i>L’eau vive<i>·</i>Les souliers<i>·</i>Vous</span></div>
+    <div class="cc-artist"><b>Aristide Bruant</b><span>À la Bastille<i>·</i>À la Villette<i>·</i>Le Chat noir<i>·</i>À Montparnasse<i>·</i>À Poissy<i>·</i>Ah ! les salauds</span></div>
+    <div class="cc-artist"><b>Mireille / Jean Nohain</b><span>Une demoiselle sur une balançoire<i>·</i>Quand un vicomte<i>·</i>Puisque vous partez en voyage<i>·</i>Couchés dans le foin<i>·</i>Parce que ça me donne du courage<i>·</i>Ce petit chemin</span></div>
+    <div class="cc-artist"><b>Yves Montand</b><span>Trois petites notes de musique<i>·</i>Les grands boulevards<i>·</i>La chansonnette</span></div>
+    <div class="cc-artist"><b>Nino Ferrer</b><span>La maison près de la fontaine<i>·</i>Je vends des robes<i>·</i>Les cornichons</span></div>
+    <div class="cc-artist"><b>Jacques Dutronc</b><span>Paris s’éveille<i>·</i>Le petit jardin<i>·</i>C’est le temps de l’amour</span></div>
+    <div class="cc-artist"><b>Mouloudji</b><span>Un jour tu verras<i>·</i>Rue de Lappe<i>·</i>Rue Saint-Vincent</span></div>
+    <div class="cc-artist"><b>Jeanne Moreau</b><span>Le tourbillon<i>·</i>J’ai la mémoire qui flanche</span></div>
+    <div class="cc-artist"><b>Barbara</b><span>Gare de Lyon<i>·</i>Elle vendait des p’tits gâteaux</span></div>
+    <div class="cc-artist"><b>Jean Ferrat</b><span>Ma môme<i>·</i>La montagne</span></div>
+    <div class="cc-artist"><b>Jean Constantin</b><span>Mon manège à moi</span></div>
+    <div class="cc-artist"><b>Frédéric Deguelt</b><span>Le bal de la marine</span></div>
+    <div class="cc-artist"><b>Diverse chansons</b><span>Mon amant de Saint-Jean<i>·</i>Le fiacre<i>·</i>Domino<i>·</i>Si tu vas à Rio<i>·</i>C’est magnifique<i>·</i>Les Champs-Élysées<i>·</i>Le plus beau tango du monde<i>·</i>La java bleue<i>·</i>Qu’est-ce qu’on attend<i>·</i>La dame de Haute-Savoie<i>·</i>Le petit vin blanc<i>·</i>Le bikini léopard<i>·</i>La vie en rose<i>·</i>Je suis seul ce soir<i>·</i>J’attendrai<i>·</i>Clopin-clopant<i>·</i>Mistral gagnant</span></div>
+  </div>
+  <div class="cc-own">
+    <div><h2>Eigen chansons</h2><p>Geschreven en gecomponeerd door Christophe Chaplet</p></div>
+    <div class="cc-songs">Monsieur Dupont<i>·</i>Cigarette de l’après-midi<i>·</i>À Saint-Médard<i>·</i>Aux Sables-d’Olonne<i>·</i>Ton halogène<i>·</i>Du bout du quai<i>·</i>Ton répondeur<i>·</i>Boulevard de Sébastopol<i>·</i>Bilbao<i>·</i>P’tit Louis<i>·</i>Le bruit des rues<i>·</i>Mon animal de compagnie<i>·</i>Ursule<i>·</i>Les majorettes</div>
   </div>
 </div>
 
 </main>
+
 <footer class="site-foot"><div class="wrap">
 <style>
 .cc-foot{font-family:"Jost","Futura","Century Gothic",sans-serif;color:#fff;font-size:16px;line-height:1.6;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px 28px;min-height:100%;box-sizing:border-box}
