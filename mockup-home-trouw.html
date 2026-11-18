@@ -9,26 +9,22 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Newsreader:ital,opsz,wght@1,6..72,300;1,6..72,400&display=swap">
 <link rel="stylesheet" href="site.css?v=20261103b">
 <style>
-.tr-part{font-family:"Jost","Futura","Century Gothic",sans-serif;color:#3c3c3c}
-.tr-part *{box-sizing:border-box}
-.tr-src{display:block;font-size:15px;font-weight:500;color:#b03d2e;letter-spacing:.03em;margin-bottom:14px}
-.tr-src a{color:inherit;text-decoration:none;border-bottom:1px solid currentColor}
-/* 1: opening, like the column's headline + lead */
-.tr-1{padding:56px 0 64px;border-top:1px solid #e7e2da;display:grid;grid-template-columns:200px 1fr;gap:64px}
-.tr-1 h2{font-family:"Newsreader",Georgia,serif;font-style:italic;font-weight:300;font-size:clamp(30px,3.6vw,46px);line-height:1.12;margin:0;color:#3c3c3c;max-width:22ch}
-.cc-home .tr-1 p{font-weight:300;font-size:clamp(20px,2.1vw,25px);line-height:1.45;margin:22px 0 0;max-width:40ch}
-/* 2: pull quote */
-.tr-2{padding:8px 0 72px;text-align:center}
-.tr-2::before{content:"";display:block;width:64px;height:3px;background:#eac089;margin:0 auto 26px}
-.cc-home .tr-2 p{font-family:"Newsreader",Georgia,serif;font-style:italic;font-weight:300;font-size:clamp(24px,2.7vw,32px);line-height:1.4;margin:0 auto;max-width:32ch}
-/* 3: in the peach box, the moment he appears */
-.cc-home .cc-quote p.tr-3{font-size:clamp(21px,2.2vw,27px);line-height:1.55;max-width:44ch;text-align:left}
-.cc-home .cc-quote .tr-more{display:inline-block;margin-top:6px;font-size:16px;color:#3c3c3c;text-decoration:underline;text-decoration-color:#b03d2e;text-underline-offset:5px}
-@media (max-width:760px){.tr-1{grid-template-columns:1fr;gap:6px;padding:40px 0 48px}}
+.cc-home .cc-about{border-bottom:0}
+.cc-home .tr{background:#eac089;padding:72px 48px 64px;margin:0 0 40px;color:#3c3c3c}
+.cc-home .tr-in{max-width:760px;margin:0 auto}
+.cc-home .tr-src{display:block;font-size:15px;font-weight:500;letter-spacing:.03em;color:#8a3024;margin-bottom:16px}
+.cc-home .tr h2{font-family:"Newsreader",Georgia,serif;font-style:italic;font-weight:300;font-size:clamp(30px,3.6vw,46px);line-height:1.12;margin:0;max-width:22ch;color:#3c3c3c}
+.cc-home .tr p{margin:0}
+.cc-home .tr .tr-lead{font-weight:300;font-size:clamp(20px,2.1vw,25px);line-height:1.45;margin-top:22px}
+.cc-home .tr .tr-pull{font-family:"Newsreader",Georgia,serif;font-style:italic;font-weight:300;font-size:clamp(24px,2.7vw,32px);line-height:1.4;margin:40px 0;padding-left:24px;border-left:3px solid #b03d2e}
+.cc-home .tr .tr-body{font-family:"Newsreader",Georgia,serif;font-weight:400;font-size:clamp(19px,1.9vw,22px);line-height:1.6}
+.cc-home .tr-foot{margin-top:28px;display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline;font-size:15px;color:#5a524a}
+.cc-home .tr-foot a{font-size:16px;color:#3c3c3c;text-decoration:underline;text-decoration-color:#b03d2e;text-underline-offset:5px}
+@media (max-width:760px){.cc-home .tr{padding:48px 22px 44px;margin-bottom:8px}.cc-home .tr .tr-pull{padding-left:16px}}
 </style>
 </head>
 <body>
-<div class="pv-bar" style="background:#b03d2e">Mockup: the Trouw column by Rob Schouten in three parts across the Home page.</div>
+<div class="pv-bar" style="background:#b03d2e">Mockup: intro first, then the Trouw column by Rob Schouten as one piece. No videos on Home.</div>
 <div class="pv-bar">Preview of the new website, not live yet. <span>The contact form is not active in this preview.</span></div>
 <header class="site-head"><div class="wrap">
   <a class="logo" href="index.html">Christophe Chaplet</a>
@@ -95,36 +91,21 @@
 }
 </style>
 <div class="cc-home">
-  <section class="tr-part tr-1">
-  <span class="tr-src">Rob Schouten in <a href="https://www.trouw.nl/cultuur-media/van-het-franse-chanson-ben-ik-nooit-een-liefhebber-geweest~b95eb51f/" target="_blank" rel="noopener">Trouw</a>, 2018</span>
-  <div>
-    <h2>Van het Franse chanson ben ik nooit een liefhebber geweest</h2>
-    <p>Ik ben nooit een liefhebber, laat staan een kenner van het Franse chanson geweest, het was me te poëtisch en te zoet, zei me te weinig over de tijd waarin ik leefde. Zo, dat is er uit…</p>
-  </div>
-</section>
   <div class="cc-about">
     <div class="cc-body">
       <p class="cc-big">All kinds of songs and memories for the future…</p>
       <p>Een wonderlijke collectie Franse Chansons in alle vormen en maten…<br>van Charles Aznavour tot Charles Trénet.</p>
     </div>
   </div>
-  <section class="tr-part tr-2">
-  <p>Ook de teksten van die liedjes leken me op een vertrek te wijzen: ‘Ne me quitte pas’, ‘Je ne regrette rien’…</p>
-</section>
+  <article class="tr"><div class="tr-in">
+    <span class="tr-src">Rob Schouten in Trouw, 2018</span>
+    <h2>Van het Franse chanson ben ik nooit een liefhebber geweest</h2>
+    <p class="tr-lead">Ik ben nooit een liefhebber, laat staan een kenner van het Franse chanson geweest, het was me te poëtisch en te zoet, zei me te weinig over de tijd waarin ik leefde. Zo, dat is er uit…</p>
+    <p class="tr-pull">Ook de teksten van die liedjes leken me op een vertrek te wijzen: ‘Ne me quitte pas’, ‘Je ne regrette rien’…</p>
+    <p class="tr-body">Afgelopen weekend, op de verjaardag van een dierbare vriendin, verscheen aan het slot uit het niets een ouderwetse chansonnier die in charmant Nederlands aankondigde dat hij een paar liedjes voor de jarige en voor ons wilde zingen. Hij tokkelde op zijn gitaar en zong van ontwakend Parijs en de liefde die hopelijk niet voorbijgaat. Eventjes voelde het alsof wij, feestgangers, met z’n allen in een cocon zaten, ver van de woedende wereld, luisterend naar lieve liedjes van weleer…</p>
+    <div class="tr-foot"><span>Rob Schouten, column in Trouw · 2018</span><a href="https://www.trouw.nl/cultuur-media/van-het-franse-chanson-ben-ik-nooit-een-liefhebber-geweest~b95eb51f/" target="_blank" rel="noopener">Lees de hele column ↗</a></div>
+  </div></article>
 
-  <div class="cc-watch">
-    <span class="cc-label">Watch him live</span>
-    <div class="cc-vids">
-      <div class="cc-vid"><div class="cc-frame"><iframe src="https://www.youtube-nocookie.com/embed/hm6i-vu7IMM" title="Concert in Paris" loading="lazy" allowfullscreen></iframe></div><b>Concert in Paris</b></div>
-      <div class="cc-vid"><div class="cc-frame"><iframe src="https://www.youtube-nocookie.com/embed/SYA-Mb-tGJo" title="Songs by Boby Lapointe" loading="lazy" allowfullscreen></iframe></div><b>Songs by Boby Lapointe</b></div>
-      <div class="cc-vid"><div class="cc-frame"><iframe src="https://www.youtube-nocookie.com/embed/ehPsguSJklE" title="Le petit jardin (Jacques Dutronc)" loading="lazy" allowfullscreen></iframe></div><b>Le petit jardin (Jacques Dutronc)</b></div>
-    </div>
-    <a class="cc-more" href="performances.html">All videos and past performances</a>
-  </div>
-  <div class="cc-quote">
-    <p class="tr-3">Afgelopen weekend, op de verjaardag van een dierbare vriendin, verscheen aan het slot uit het niets een ouderwetse chansonnier die in charmant Nederlands aankondigde dat hij een paar liedjes voor de jarige en voor ons wilde zingen. Hij tokkelde op zijn gitaar en zong van ontwakend Parijs en de liefde die hopelijk niet voorbijgaat. Eventjes voelde het alsof wij, feestgangers, met z’n allen in een cocon zaten, ver van de woedende wereld, luisterend naar lieve liedjes van weleer…</p>
-    <cite>Rob Schouten, Trouw · 2018</cite><br><a class="tr-more" href="https://www.trouw.nl/cultuur-media/van-het-franse-chanson-ben-ik-nooit-een-liefhebber-geweest~b95eb51f/" target="_blank" rel="noopener">Lees de hele column ↗</a>
-  </div>
 </div>
 
 </main>
