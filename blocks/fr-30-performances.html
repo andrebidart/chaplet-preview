@@ -27,6 +27,13 @@
 .cc-home .cc-past a{color:#3c3c3c;text-decoration:underline;text-decoration-color:#eac089;text-decoration-thickness:2px;text-underline-offset:5px}
 .cc-home .cc-past a::after{content:" \2197";color:#b03d2e;font-size:.85em;white-space:nowrap}
 .cc-home .cc-past a:hover{color:#b03d2e;text-decoration-color:#b03d2e}
+.cc-home .cc-audio{display:block;margin-top:10px}
+.cc-home .cc-play{display:inline-flex;align-items:center;gap:10px;font:inherit;font-size:15.5px;font-weight:500;color:#fff;background:#b03d2e;border:0;border-radius:999px;padding:8px 18px 8px 12px;cursor:pointer}
+.cc-home .cc-play:hover{background:#963225}
+.cc-home .cc-play .ic{width:22px;height:22px;border-radius:50%;background:#fff;position:relative;flex:none}
+.cc-home .cc-play .ic::before{content:"";position:absolute;left:8px;top:6px;border-style:solid;border-width:5px 0 5px 8px;border-color:transparent transparent transparent #b03d2e}
+.cc-home .cc-play.on .ic::before{left:7px;top:6px;width:3px;height:10px;border:0;border-left:3px solid #b03d2e;border-right:3px solid #b03d2e;box-sizing:content-box;width:2px}
+.cc-home .cc-play .tm{font-weight:400;opacity:.85;font-variant-numeric:tabular-nums}
 @media (max-width:760px){
   .cc-home .cc-head,.cc-home .cc-row{grid-template-columns:1fr;gap:14px}
   .cc-home .cc-head{padding:24px 0}
@@ -93,7 +100,8 @@
         <span class="it">Présentateur de la finale du Concours de la Chanson, Alliance Française<span class="where">33<sup>e</sup> Concours · 30 septembre 2017</span></span>
       </span></li>
       <li><span class="yr">2008</span><span class="ev">
-        <span class="it"><a href="https://www.concertzender.nl/programma/het-chanson-12/" target="_blank" rel="noopener">« Ta Katie t’a quitté » dans l’émission Het Chanson, sur le Concours de la Chanson 2004–2005</a><span class="where">19 janvier · radio Concertzender</span></span>
+        <span class="it"><a href="https://www.concertzender.nl/programma/het-chanson-12/" target="_blank" rel="noopener">« Ta Katie t’a quitté » dans l’émission Het Chanson, sur le Concours de la Chanson 2004–2005</a><span class="where">19 janvier · radio Concertzender</span>
+          <span class="cc-audio"><button type="button" class="cc-play" aria-label="Écouter Ta Katie t’a quitté, Concertzender 2008" onclick="ccPlay(this)"><span class="ic" aria-hidden="true"></span><span class="lb">Écouter</span><span class="tm">2:19</span></button><audio preload="none" src="https://andrebidart.github.io/chaplet-preview/audio/chaplet-ta-katie-concertzender-2008.mp3"></audio></span></span>
       </span></li>
       <li><span class="yr">2004</span><span class="ev">
         <span class="it">Prix du public, Concours de la Chanson de l’Alliance Française</span>
@@ -101,3 +109,19 @@
     </ul>
   </div>
 </div>
+<script>
+function ccPlay(b){
+  var a=b.nextElementSibling, t=b.querySelector('.tm'), total=t.getAttribute('data-total')||t.textContent;
+  t.setAttribute('data-total',total);
+  function f(s){s=Math.floor(s||0);return Math.floor(s/60)+':'+('0'+s%60).slice(-2)}
+  if(!a.dataset.ready){
+    a.dataset.ready=1;
+    a.addEventListener('timeupdate',function(){t.textContent=f(a.currentTime)+' / '+total});
+    a.addEventListener('ended',function(){b.classList.remove('on');t.textContent=total;a.currentTime=0});
+    a.addEventListener('pause',function(){b.classList.remove('on')});
+    a.addEventListener('play',function(){b.classList.add('on')});
+  }
+  document.querySelectorAll('.cc-audio audio').forEach(function(x){if(x!==a)x.pause()});
+  if(a.paused){a.play()}else{a.pause()}
+}
+</script>
