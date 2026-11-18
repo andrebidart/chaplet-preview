@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>MOCKUP · Home photo options | Christophe Chaplet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Newsreader:ital,opsz,wght@1,6..72,300;1,6..72,400&display=swap">
+<link rel="stylesheet" href="site.css?v=20261103b">
+<style>
+.mk{position:sticky;top:0;z-index:50;background:#3c3c3c;color:#fff;font-family:"Jost",sans-serif;font-size:15px;padding:10px 16px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:center}
+.mk b{font-weight:500;margin-right:6px;color:#eac089}
+.mk button{font:inherit;border:1px solid #eac089;background:transparent;color:#fff;border-radius:40px;padding:6px 16px;cursor:pointer}
+.mk button.on{background:#eac089;color:#3c3c3c}
+.mk p{flex-basis:100%;text-align:center;margin:4px 0 0;opacity:.8;font-size:14px}
+.opt{display:none}.opt.on{display:block}
+.mk-band{margin:72px 0 0;display:grid;gap:10px}
+.mk-band img{display:block;width:100%;aspect-ratio:21/9;object-fit:cover;object-position:50% 28%}
+.mk-band figcaption,.mk-side figcaption{font-family:"Jost",sans-serif;font-size:15px;color:#68635c}
+.cc-home .mk-about{grid-template-columns:1.2fr 1fr;align-items:center}
+.mk-left{display:grid;gap:40px}
+.cc-home .mk-facts{grid-template-columns:1fr 1fr;padding:24px 0 0;border-left:0;border-top:1px solid #eac089}
+.mk-side{margin:0;display:grid;gap:10px}
+.mk-side img{display:block;width:100%;aspect-ratio:5/4;object-fit:cover}
+@media (max-width:860px){.cc-home .mk-facts{justify-items:start;text-align:left;border-right:0}.mk-band img{aspect-ratio:4/3}}
+</style>
+</head>
+<body>
+<div class="mk"><b>Home photo</b><button data-o="A" class=on>A</button><button data-o="B">B</button><button data-o="C">C</button><p id="mk-note">A · In the hero, instead of the current portrait (same peach frame).</p></div>
+<div class="pv-bar">Preview of the new website, not live yet. <span>The contact form is not active in this preview.</span></div>
+<header class="site-head"><div class="wrap">
+  <a class="logo" href="index.html">Christophe Chaplet</a>
+  <nav class="cc-nav"><a href="index.html" class="cc-on">Home</a><a href="repertoire.html">Repertoire</a><a href="performances.html">Performances</a><a href="contact.html">Contact</a><span class="cc-lang"><a href="fr.html">FR</a><a href="nl.html">NL</a><a href="index.html" class="cc-on">EN</a></span></nav>
+</div></header>
+<main class="wrap"><div class="opt A on">
+<style>
+.cc-hero{font-family:"Jost","Futura","Century Gothic",sans-serif;color:#3c3c3c;font-size:17px;line-height:1.7;display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center;padding:48px 0 72px;box-sizing:border-box}
+.cc-hero *{box-sizing:border-box}
+.cc-hero h1{font-family:inherit;font-weight:300;font-size:clamp(46px,7.4vw,96px);line-height:.98;letter-spacing:-.01em;margin:0;color:#3c3c3c;text-transform:none}
+.cc-hero h1 span{display:block}
+.cc-hero .cc-sub{font-family:"Newsreader",Georgia,serif;font-style:italic;font-weight:300;font-size:clamp(22px,2.6vw,30px);color:#b03d2e;margin:18px 0 0}
+.cc-hero .cc-pitch{margin:22px 0 0;max-width:38ch;font-size:19px}
+.cc-hero .cc-ctas{display:flex;flex-wrap:wrap;align-items:center;gap:14px 26px;margin-top:30px}
+.cc-hero .cc-btn{display:inline-flex;align-items:center;border-radius:999px;padding:14px 30px;font-size:16.5px;font-weight:500;letter-spacing:.02em;background:#b03d2e;color:#fff;text-decoration:none}
+.cc-hero .cc-btn:hover{background:#963225}
+.cc-hero .cc-link{font-size:16.5px;color:#b03d2e;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:2px}
+.cc-hero .cc-portrait{position:relative;justify-self:end;width:min(100%,380px);padding:0 0 14px 14px}
+.cc-hero .cc-portrait::before{content:"";position:absolute;left:0;bottom:0;width:70%;height:70%;background:#f6e6cc}
+.cc-hero .cc-img{position:relative;aspect-ratio:4/5;width:100%;background:#e9e5de;display:grid;place-items:center;text-align:center;color:#68635c;font-size:15px;padding:14%}
+.cc-hero .cc-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 35%}
+@media (max-width:760px){.cc-hero{grid-template-columns:1fr;gap:36px;padding:24px 0 48px}.cc-hero .cc-portrait{justify-self:center;width:min(100%,300px)}}
+</style>
+<div class="cc-hero">
+  <div>
+    <h1><span>Christophe</span><span>Chaplet</span></h1>
+    <p class="cc-sub">Un tour de chansons</p>
+    <p class="cc-pitch">Songs from the 19th till the 21st century in all forms and sizes.</p>
+    <div class="cc-ctas"><a class="cc-btn" href="contact.html">Contact</a><a class="cc-link" href="repertoire.html">See the repertoire</a></div>
+  </div>
+  <div class="cc-portrait"><div class="cc-img"><img src="img/chaplet-on-stage-khl.jpg" alt="Christophe Chaplet on stage" style="object-position:42% 30%"></div></div>
+</div>
+<style>
+.cc-home{font-family:"Jost","Futura","Century Gothic",sans-serif;color:#3c3c3c;font-size:17px;line-height:1.7}
+.cc-home *{box-sizing:border-box}
+.cc-home p{margin:0}
+.cc-home .cc-about{display:grid;grid-template-columns:1.5fr 1fr;gap:80px;align-items:start;padding:56px 0 64px;border-top:1px solid #e7e2da;border-bottom:1px solid #e7e2da}
+.cc-home .cc-about > *{min-width:0}
+.cc-home .cc-body{display:grid;gap:18px}
+.cc-home .cc-big{font-weight:300;font-size:clamp(22px,2.6vw,30px);line-height:1.35;max-width:30ch}
+.cc-home .cc-body p{max-width:58ch}
+.cc-home .cc-facts{display:grid;gap:28px;padding:6px 0 6px 40px;border-left:1px solid #eac089}
+.cc-home .cc-fact{display:grid;gap:2px}
+.cc-home .cc-fact b{font-weight:300;font-size:34px;line-height:1;color:#b03d2e}
+.cc-home .cc-fact span{font-size:15.5px;color:#68635c;max-width:28ch}
+.cc-home .cc-watch{padding:72px 0}
+.cc-home .cc-label{font-size:15px;font-weight:500;color:#b03d2e;letter-spacing:.03em}
+.cc-home .cc-vids{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:20px}
+.cc-home .cc-vid{display:grid;gap:10px;min-width:0}
+.cc-home .cc-frame{position:relative;aspect-ratio:16/9;width:100%;background:#ece8e1}
+.cc-home .cc-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.cc-home .cc-vid b{font-weight:500;font-size:17px;line-height:1.35}
+.cc-home .cc-more{display:inline-block;margin-top:28px;font-size:16.5px;color:#b03d2e;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:2px}
+.cc-home .cc-quote{background:#eac089;text-align:center;padding:64px 48px;margin-bottom:40px}
+.cc-home .cc-quote p{font-family:"Newsreader",Georgia,serif;font-style:italic;font-weight:300;font-size:clamp(26px,3vw,36px);line-height:1.4;max-width:30ch;margin:0 auto 18px}
+.cc-home .cc-quote cite{font-style:normal;font-size:15px;color:#5a524a}
+.cc-home .cc-quote cite .tr{display:block;font-size:13.5px;color:#7a6f63;margin-top:2px}
+@media (max-width:860px){
+  .cc-home .cc-about{grid-template-columns:1fr;gap:32px}
+  .cc-home .cc-facts{padding:6px 20px 6px 0;border-left:0;border-right:1px solid #eac089;justify-items:end;text-align:right}
+  .cc-home .cc-vids{grid-template-columns:1fr}
+  .cc-home .cc-watch{padding:56px 0}
+  .cc-home .cc-quote{padding:48px 24px;margin-bottom:8px}
+}
+</style>
+<div class="cc-home">
+  <div class="cc-about">
+    <div class="cc-body">
+      <p class="cc-big">All kinds of songs and memories for the future…</p>
+      <p>He performed in the cellars and cultural centres in and around Paris, the Concertgebouw in Amsterdam, Vredenburg Utrecht, the French Embassy, Maison Descartes and for Alliance Française throughout The Netherlands and Portugal.</p>
+    </div>
+    <div class="cc-facts">
+      <div class="cc-fact"><b>2004</b><span>Public prize, Concours de la Chanson de l’Alliance Française</span></div>
+      <div class="cc-fact"><b>2015, 2017</b><span>Host of the Concours de la Chanson</span></div>
+    </div>
+  </div>
+  <div class="cc-watch">
+    <span class="cc-label">Watch him live</span>
+    <div class="cc-vids">
+      <div class="cc-vid"><div class="cc-frame"><iframe src="https://www.youtube-nocookie.com/embed/hm6i-vu7IMM" title="Concert in Paris" loading="lazy" allowfullscreen></iframe></div><b>Concert in Paris</b></div>
+      <div class="cc-vid"><div class="cc-frame"><iframe src="https://www.youtube-nocookie.com/embed/SYA-Mb-tGJo" title="Songs by Boby Lapointe" loading="lazy" allowfullscreen></iframe></div><b>Songs by Boby Lapointe</b></div>
+      <div class="cc-vid"><div class="cc-frame"><iframe src="https://www.youtube-nocookie.com/embed/ehPsguSJklE" title="Le petit jardin (Jacques Dutronc)" loading="lazy" allowfullscreen></iframe></div><b>Le petit jardin (Jacques Dutronc)</b></div>
+    </div>
+    <a class="cc-more" href="performances.html">All videos and past performances</a>
+  </div>
+  <div class="cc-quote">
+    <p>“For a moment it felt as if we were all sitting in a cocoon, far from the raging world, listening to sweet songs of long ago.”</p>
+    <cite>Rob Schouten, Trouw · 2018<span class="tr">translated from Dutch</span></cite>
+  </div>
+</div>
+
+</div><div class="opt B">
+<style>
+.cc-hero{font-family:"Jost","Futura","Century Gothic",sans-serif;color:#3c3c3c;font-size:17px;line-height:1.7;display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center;padding:48px 0 72px;box-sizing:border-box}
+.cc-hero *{box-sizing:border-box}
+.cc-hero h1{font-family:inherit;font-weight:300;font-size:clamp(46px,7.4vw,96px);line-height:.98;letter-spacing:-.01em;margin:0;color:#3c3c3c;text-transform:none}
+.cc-hero h1 span{display:block}
+.cc-hero .cc-sub{font-family:"Newsreader",Georgia,serif;font-style:italic;font-weight:300;font-size:clamp(22px,2.6vw,30px);color:#b03d2e;margin:18px 0 0}
+.cc-hero .cc-pitch{margin:22px 0 0;max-width:38ch;font-size:19px}
+.cc-hero .cc-ctas{display:flex;flex-wrap:wrap;align-items:center;gap:14px 26px;margin-top:30px}
+.cc-hero .cc-btn{display:inline-flex;align-items:center;border-radius:999px;padding:14px 30px;font-size:16.5px;font-weight:500;letter-spacing:.02em;background:#b03d2e;color:#fff;text-decoration:none}
+.cc-hero .cc-btn:hover{background:#963225}
+.cc-hero .cc-link{font-size:16.5px;color:#b03d2e;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:2px}
+.cc-hero .cc-portrait{position:relative;justify-self:end;width:min(100%,380px);padding:0 0 14px 14px}
+.cc-hero .cc-portrait::before{content:"";position:absolute;left:0;bottom:0;width:70%;height:70%;background:#f6e6cc}
+.cc-hero .cc-img{position:relative;aspect-ratio:4/5;width:100%;background:#e9e5de;display:grid;place-items:center;text-align:center;color:#68635c;font-size:15px;padding:14%}
+.cc-hero .cc-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 35%}
+@media (max-width:760px){.cc-hero{grid-template-columns:1fr;gap:36px;padding:24px 0 48px}.cc-hero .cc-portrait{justify-self:center;width:min(100%,300px)}}
+</style>
+<div class="cc-hero">
+  <div>
+    <h1><span>Christophe</span><span>Chaplet</span></h1>
+    <p class="cc-sub">Un tour de chansons</p>
+    <p class="cc-pitch">Songs from the 19th till the 21st century in all forms and sizes.</p>
+    <div class="cc-ctas"><a class="cc-btn" href="contact.html">Contact</a><a class="cc-link" href="repertoire.html">See the repertoire</a></div>
+  </div>
+  <div class="cc-portrait"><div class="cc-img"><img src="https://impro.usercontent.one/appid/hostnetWsb/domain/christophe-chaplet.net/media/christophe-chaplet.net/onewebmedia/2026%20Christophe%20Chaplet.jpg?sourceContentType=image%2Fjpeg&amp;resize=900%2B1200&amp;quality=85" alt="Christophe Chaplet"></div></div>
+</div>
+<style>
+.cc-home{font-family:"Jost","Futura","Century Gothic",sans-serif;color:#3c3c3c;font-size:17px;line-height:1.7}
+.cc-home *{box-sizing:border-box}
+.cc-home p{margin:0}
+.cc-home .cc-about{display:grid;grid-template-columns:1.5fr 1fr;gap:80px;align-items:start;padding:56px 0 64px;border-top:1px solid #e7e2da;border-bottom:1px solid #e7e2da}
+.cc-home .cc-about > *{min-width:0}
+.cc-home .cc-body{display:grid;gap:18px}
+.cc-home .cc-big{font-weight:300;font-size:clamp(22px,2.6vw,30px);line-height:1.35;max-width:30ch}
+.cc-home .cc-body p{max-width:58ch}
+.cc-home .cc-facts{display:grid;gap:28px;padding:6px 0 6px 40px;border-left:1px solid #eac089}
+.cc-home .cc-fact{display:grid;gap:2px}
+.cc-home .cc-fact b{font-weight:300;font-size:34px;line-height:1;color:#b03d2e}
+.cc-home .cc-fact span{font-size:15.5px;color:#68635c;max-width:28ch}
+.cc-home .cc-watch{padding:72px 0}
+.cc-home .cc-label{font-size:15px;font-weight:500;color:#b03d2e;letter-spacing:.03em}
+.cc-home .cc-vids{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:20px}
+.cc-home .cc-vid{display:grid;gap:10px;min-width:0}
+.cc-home .cc-frame{position:relative;aspect-ratio:16/9;width:100%;background:#ece8e1}
+.cc-home .cc-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.cc-home .cc-vid b{font-weight:500;font-size:17px;line-height:1.35}
+.cc-home .cc-more{display:inline-block;margin-top:28px;font-size:16.5px;color:#b03d2e;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:2px}
+.cc-home .cc-quote{background:#eac089;text-align:center;padding:64px 48px;margin-bottom:40px}
+.cc-home .cc-quote p{font-family:"Newsreader",Georgia,serif;font-style:italic;font-weight:300;font-size:clamp(26px,3vw,36px);line-height:1.4;max-width:30ch;margin:0 auto 18px}
+.cc-home .cc-quote cite{font-style:normal;font-size:15px;color:#5a524a}
+.cc-home .cc-quote cite .tr{display:block;font-size:13.5px;color:#7a6f63;margin-top:2px}
+@media (max-width:860px){
+  .cc-home .cc-about{grid-template-columns:1fr;gap:32px}
+  .cc-home .cc-facts{padding:6px 20px 6px 0;border-left:0;border-right:1px solid #eac089;justify-items:end;text-align:right}
+  .cc-home .cc-vids{grid-template-columns:1fr}
+  .cc-home .cc-watch{padding:56px 0}
+  .cc-home .cc-quote{padding:48px 24px;margin-bottom:8px}
+}
+</style>
+<div class="cc-home">
+  <div class="cc-about">
+    <div class="cc-body">
+      <p class="cc-big">All kinds of songs and memories for the future…</p>
+      <p>He performed in the cellars and cultural centres in and around Paris, the Concertgebouw in Amsterdam, Vredenburg Utrecht, the French Embassy, Maison Descartes and for Alliance Française throughout The Netherlands and Portugal.</p>
+    </div>
+    <div class="cc-facts">
+      <div class="cc-fact"><b>2004</b><span>Public prize, Concours de la Chanson de l’Alliance Française</span></div>
+      <div class="cc-fact"><b>2015, 2017</b><span>Host of the Concours de la Chanson</span></div>
+    </div>
+  </div>
+  <figure class="mk-band"><img src="img/chaplet-on-stage-khl.jpg" alt="Christophe Chaplet on stage"><figcaption>De KHL, Amsterdam · January 2022</figcaption></figure>
+  <div class="cc-watch">
+    <span class="cc-label">Watch him live</span>
+    <div class="cc-vids">
+      <div class="cc-vid"><div class="cc-frame"><iframe src="https://www.youtube-nocookie.com/embed/hm6i-vu7IMM" title="Concert in Paris" loading="lazy" allowfullscreen></iframe></div><b>Concert in Paris</b></div>
+      <div class="cc-vid"><div class="cc-frame"><iframe src="https://www.youtube-nocookie.com/embed/SYA-Mb-tGJo" title="Songs by Boby Lapointe" loading="lazy" allowfullscreen></iframe></div><b>Songs by Boby Lapointe</b></div>
+      <div class="cc-vid"><div class="cc-frame"><iframe src="https://www.youtube-nocookie.com/embed/ehPsguSJklE" title="Le petit jardin (Jacques Dutronc)" loading="lazy" allowfullscreen></iframe></div><b>Le petit jardin (Jacques Dutronc)</b></div>
+    </div>
+    <a class="cc-more" href="performances.html">All videos and past performances</a>
+  </div>
+  <div class="cc-quote">
+    <p>“For a moment it felt as if we were all sitting in a cocoon, far from the raging world, listening to sweet songs of long ago.”</p>
+    <cite>Rob Schouten, Trouw · 2018<span class="tr">translated from Dutch</span></cite>
+  </div>
+</div>
+
+</div><div class="opt C">
+<style>
+.cc-hero{font-family:"Jost","Futura","Century Gothic",sans-serif;color:#3c3c3c;font-size:17px;line-height:1.7;display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center;padding:48px 0 72px;box-sizing:border-box}
+.cc-hero *{box-sizing:border-box}
+.cc-hero h1{font-family:inherit;font-weight:300;font-size:clamp(46px,7.4vw,96px);line-height:.98;letter-spacing:-.01em;margin:0;color:#3c3c3c;text-transform:none}
+.cc-hero h1 span{display:block}
+.cc-hero .cc-sub{font-family:"Newsreader",Georgia,serif;font-style:italic;font-weight:300;font-size:clamp(22px,2.6vw,30px);color:#b03d2e;margin:18px 0 0}
+.cc-hero .cc-pitch{margin:22px 0 0;max-width:38ch;font-size:19px}
+.cc-hero .cc-ctas{display:flex;flex-wrap:wrap;align-items:center;gap:14px 26px;margin-top:30px}
+.cc-hero .cc-btn{display:inline-flex;align-items:center;border-radius:999px;padding:14px 30px;font-size:16.5px;font-weight:500;letter-spacing:.02em;background:#b03d2e;color:#fff;text-decoration:none}
+.cc-hero .cc-btn:hover{background:#963225}
+.cc-hero .cc-link{font-size:16.5px;color:#b03d2e;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:2px}
+.cc-hero .cc-portrait{position:relative;justify-self:end;width:min(100%,380px);padding:0 0 14px 14px}
+.cc-hero .cc-portrait::before{content:"";position:absolute;left:0;bottom:0;width:70%;height:70%;background:#f6e6cc}
+.cc-hero .cc-img{position:relative;aspect-ratio:4/5;width:100%;background:#e9e5de;display:grid;place-items:center;text-align:center;color:#68635c;font-size:15px;padding:14%}
+.cc-hero .cc-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 35%}
+@media (max-width:760px){.cc-hero{grid-template-columns:1fr;gap:36px;padding:24px 0 48px}.cc-hero .cc-portrait{justify-self:center;width:min(100%,300px)}}
+</style>
+<div class="cc-hero">
+  <div>
+    <h1><span>Christophe</span><span>Chaplet</span></h1>
+    <p class="cc-sub">Un tour de chansons</p>
+    <p class="cc-pitch">Songs from the 19th till the 21st century in all forms and sizes.</p>
+    <div class="cc-ctas"><a class="cc-btn" href="contact.html">Contact</a><a class="cc-link" href="repertoire.html">See the repertoire</a></div>
+  </div>
+  <div class="cc-portrait"><div class="cc-img"><img src="https://impro.usercontent.one/appid/hostnetWsb/domain/christophe-chaplet.net/media/christophe-chaplet.net/onewebmedia/2026%20Christophe%20Chaplet.jpg?sourceContentType=image%2Fjpeg&amp;resize=900%2B1200&amp;quality=85" alt="Christophe Chaplet"></div></div>
+</div>
+<style>
+.cc-home{font-family:"Jost","Futura","Century Gothic",sans-serif;color:#3c3c3c;font-size:17px;line-height:1.7}
+.cc-home *{box-sizing:border-box}
+.cc-home p{margin:0}
+.cc-home .cc-about{display:grid;grid-template-columns:1.5fr 1fr;gap:80px;align-items:start;padding:56px 0 64px;border-top:1px solid #e7e2da;border-bottom:1px solid #e7e2da}
+.cc-home .cc-about > *{min-width:0}
+.cc-home .cc-body{display:grid;gap:18px}
+.cc-home .cc-big{font-weight:300;font-size:clamp(22px,2.6vw,30px);line-height:1.35;max-width:30ch}
+.cc-home .cc-body p{max-width:58ch}
+.cc-home .cc-facts{display:grid;gap:28px;padding:6px 0 6px 40px;border-left:1px solid #eac089}
+.cc-home .cc-fact{display:grid;gap:2px}
+.cc-home .cc-fact b{font-weight:300;font-size:34px;line-height:1;color:#b03d2e}
+.cc-home .cc-fact span{font-size:15.5px;color:#68635c;max-width:28ch}
+.cc-home .cc-watch{padding:72px 0}
+.cc-home .cc-label{font-size:15px;font-weight:500;color:#b03d2e;letter-spacing:.03em}
+.cc-home .cc-vids{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:20px}
+.cc-home .cc-vid{display:grid;gap:10px;min-width:0}
+.cc-home .cc-frame{position:relative;aspect-ratio:16/9;width:100%;background:#ece8e1}
+.cc-home .cc-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.cc-home .cc-vid b{font-weight:500;font-size:17px;line-height:1.35}
+.cc-home .cc-more{display:inline-block;margin-top:28px;font-size:16.5px;color:#b03d2e;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:2px}
+.cc-home .cc-quote{background:#eac089;text-align:center;padding:64px 48px;margin-bottom:40px}
+.cc-home .cc-quote p{font-family:"Newsreader",Georgia,serif;font-style:italic;font-weight:300;font-size:clamp(26px,3vw,36px);line-height:1.4;max-width:30ch;margin:0 auto 18px}
+.cc-home .cc-quote cite{font-style:normal;font-size:15px;color:#5a524a}
+.cc-home .cc-quote cite .tr{display:block;font-size:13.5px;color:#7a6f63;margin-top:2px}
+@media (max-width:860px){
+  .cc-home .cc-about{grid-template-columns:1fr;gap:32px}
+  .cc-home .cc-facts{padding:6px 20px 6px 0;border-left:0;border-right:1px solid #eac089;justify-items:end;text-align:right}
+  .cc-home .cc-vids{grid-template-columns:1fr}
+  .cc-home .cc-watch{padding:56px 0}
+  .cc-home .cc-quote{padding:48px 24px;margin-bottom:8px}
+}
+</style>
+<div class="cc-home">
+  <div class="cc-about mk-about">
+    <div class="mk-left"><div class="cc-body">
+      <p class="cc-big">All kinds of songs and memories for the future…</p>
+      <p>He performed in the cellars and cultural centres in and around Paris, the Concertgebouw in Amsterdam, Vredenburg Utrecht, the French Embassy, Maison Descartes and for Alliance Française throughout The Netherlands and Portugal.</p>
+    </div>
+    <div class="cc-facts mk-facts">
+      <div class="cc-fact"><b>2004</b><span>Public prize, Concours de la Chanson de l’Alliance Française</span></div>
+      <div class="cc-fact"><b>2015, 2017</b><span>Host of the Concours de la Chanson</span></div>
+    </div></div>
+    <figure class="mk-side"><img src="img/chaplet-on-stage-khl.jpg" alt="Christophe Chaplet on stage"><figcaption>De KHL, Amsterdam · January 2022</figcaption></figure>
+  </div>
+  <div class="cc-watch">
+    <span class="cc-label">Watch him live</span>
+    <div class="cc-vids">
+      <div class="cc-vid"><div class="cc-frame"><iframe src="https://www.youtube-nocookie.com/embed/hm6i-vu7IMM" title="Concert in Paris" loading="lazy" allowfullscreen></iframe></div><b>Concert in Paris</b></div>
+      <div class="cc-vid"><div class="cc-frame"><iframe src="https://www.youtube-nocookie.com/embed/SYA-Mb-tGJo" title="Songs by Boby Lapointe" loading="lazy" allowfullscreen></iframe></div><b>Songs by Boby Lapointe</b></div>
+      <div class="cc-vid"><div class="cc-frame"><iframe src="https://www.youtube-nocookie.com/embed/ehPsguSJklE" title="Le petit jardin (Jacques Dutronc)" loading="lazy" allowfullscreen></iframe></div><b>Le petit jardin (Jacques Dutronc)</b></div>
+    </div>
+    <a class="cc-more" href="performances.html">All videos and past performances</a>
+  </div>
+  <div class="cc-quote">
+    <p>“For a moment it felt as if we were all sitting in a cocoon, far from the raging world, listening to sweet songs of long ago.”</p>
+    <cite>Rob Schouten, Trouw · 2018<span class="tr">translated from Dutch</span></cite>
+  </div>
+</div>
+
+</div></main>
+
+<footer class="site-foot"><div class="wrap">
+<style>
+.cc-foot{font-family:"Jost","Futura","Century Gothic",sans-serif;color:#fff;font-size:16px;line-height:1.6;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px 28px;min-height:100%;box-sizing:border-box}
+.cc-foot a{color:#fff;text-decoration:none}
+.cc-foot a:hover{text-decoration:underline;text-underline-offset:4px}
+.cc-foot .cc-it{font-family:"Newsreader",Georgia,serif;font-style:italic;font-size:19px}
+.cc-foot .cc-c{display:flex;flex-wrap:wrap;gap:6px 24px}
+@media (max-width:760px){.cc-foot{flex-direction:column;align-items:flex-start;padding:8px 0}}
+</style>
+<div class="cc-foot">
+  <span>Christophe Chaplet, <span class="cc-it">un tour de chansons.</span></span>
+  <span class="cc-c"><a href="mailto:info@christophe-chaplet.net">info@christophe-chaplet.net</a><a href="tel:+31634848196">+31 (0)6 34 84 81 96</a></span>
+</div>
+
+</div></footer>
+<script>const N={"A": "A · In the hero, instead of the current portrait (same peach frame).", "B": "B · A wide photo between the introduction and “Watch him live”.", "C": "C · Next to the introduction; the two facts move under the text."};
+document.querySelectorAll('.mk button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.mk button,.opt').forEach(e=>e.classList.remove('on'));b.classList.add('on');document.querySelector('.opt.'+b.dataset.o).classList.add('on');document.getElementById('mk-note').textContent=N[b.dataset.o];scrollTo(0,0)});</script>
+</body>
+</html>
