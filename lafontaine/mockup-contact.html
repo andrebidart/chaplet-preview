@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr" data-lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact · Le chêne et le roseau</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="mockup.css?v=5">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="mockup-home.html">Le chêne <b>&amp;</b> le roseau</a>
+    <div class="right">
+      <button class="burger" aria-label="Menu" onclick="document.body.classList.toggle('open')">☰</button>
+      <nav class="menu">
+<a href="mockup-home.html"><span data-l="fr">Le spectacle</span><span data-l="nl">De voorstelling</span><span data-l="en">The show</span></a>
+<a href="mockup-programme.html"><span data-l="fr en">Programme</span><span data-l="nl">Programma</span></a>
+<a href="mockup-extraits.html"><span data-l="fr">Extraits</span><span data-l="nl">Fragmenten</span><span data-l="en">Videos</span></a>
+<a href="mockup-representations.html"><span data-l="fr">Représentations</span><span data-l="nl">Voorstellingen</span><span data-l="en">Performances</span></a>
+<a href="mockup-contact.html" aria-current="page">Contact</a>
+      </nav>
+      <div class="langs" role="group" aria-label="Language">
+        <button data-set="fr" aria-pressed="true">fr</button>
+        <button data-set="nl" aria-pressed="false">nl</button>
+        <button data-set="en" aria-pressed="false">en</button>
+      </div>
+    </div>
+  </div>
+</header>
+<main>
+
+<div class="phead wrap">
+  <p class="label">Contact</p>
+  <h1><span data-l="fr">Écrivez-nous</span><span data-l="nl">Schrijf ons</span><span data-l="en">Write to us</span></h1>
+</div>
+<section class="s" style="border-top:0;padding-top:20px">
+  <div class="wrap contact">
+    <div class="cinfo">
+      <p><span class="k">E-mail</span><a href="mailto:info@jeandelafontaine.site">info@jeandelafontaine.site</a></p>
+      <p><span class="k"><span data-l="fr">Téléphone</span><span data-l="nl">Telefoon</span><span data-l="en">Phone</span></span><a href="tel:+31634848196">+31 6 34 84 81 96</a></p>
+      <p class="note" data-l="fr">Pour accueillir le spectacle dans votre théâtre, centre culturel, Alliance française ou école, écrivez-nous.</p>
+<p class="note" data-l="nl">Wilt u de voorstelling boeken voor uw theater, cultureel centrum, Alliance Française of school? Schrijf ons.</p>
+<p class="note" data-l="en">To bring the show to your theatre, cultural centre, Alliance Française or school, write to us.</p>
+    </div>
+    <form onsubmit="event.preventDefault()">
+      <label><span data-l="fr">Nom</span><span data-l="nl">Naam</span><span data-l="en">Name</span><input></label>
+      <label>E-mail<input type="email"></label>
+      <label><span data-l="fr en">Message</span><span data-l="nl">Bericht</span><textarea></textarea></label>
+      <button class="btn" type="submit"><span data-l="fr">Envoyer</span><span data-l="nl">Versturen</span><span data-l="en">Send</span></button>
+    </form>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="wrap">
+    <span class="mark">Le chêne <b>&amp;</b> le roseau</span><br>
+    Christophe Chaplet · Thierry Louyat · Jean de La Fontaine (1621–1695)
+  </div>
+</footer>
+<div class="mock">Mockup · contact</div>
+<script src="mockup.js?v=5"></script>
+</body>
+</html>
