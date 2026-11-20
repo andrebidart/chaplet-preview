@@ -9,7 +9,7 @@
 html{scroll-behavior:smooth}
 section,[id]{scroll-margin-top:70px}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:21px;line-height:1.6;-webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
+img{max-width:100%;height:auto;display:block}
 a{color:inherit}
 .wrap{max-width:1120px;margin:0 auto;padding:0 28px}
 .narrow{max-width:760px;margin:0 auto}
