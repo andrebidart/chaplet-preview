@@ -148,6 +148,8 @@ footer .mark{font-size:22px;display:inline-block;margin-bottom:6px;color:var(--i
 }
 @media (max-width:420px){ .wrap{padding:0 16px} .mark{font-size:20px} .host{padding:24px 20px} }
 
+@media (max-width:420px){.hero.wrap{padding:56px 16px 0}}
+
 /* illustrated programme: one list + collage of pinned prints */
 .prog .ill{color:var(--rust);text-decoration:none;margin-left:.4em;font-size:.85em}
 .collage-s{padding-top:40px}
