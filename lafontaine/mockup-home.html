@@ -82,9 +82,10 @@ h2{font-family:var(--display);font-weight:400;font-size:clamp(36px,4.6vw,54px);l
 .langnote{font-style:italic;color:var(--ink2);margin-top:22px;font-size:19px;text-align:center}
 
 /* videos */
-.vids{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+.vids{display:grid;grid-template-columns:repeat(2,minmax(0,320px));gap:48px;justify-content:center}
+#extraits .label,#extraits h2{text-align:center}
 .vids figure{margin:0}
-.vids video{width:100%;aspect-ratio:16/9;background:#14110e;display:block;border:1px solid var(--ink)}
+.vids video{width:100%;aspect-ratio:9/16;object-fit:cover;background:#14110e;display:block;border:1px solid var(--ink)}
 .vids figcaption{font-family:var(--display);font-style:italic;font-size:25px;margin-top:12px}
 .vids figcaption small{display:block;font-family:var(--body);font-style:italic;font-size:17px;color:var(--ink2)}
 
@@ -141,7 +142,9 @@ footer .mark{font-size:22px;display:inline-block;margin-bottom:6px;color:var(--i
 @media (max-width:860px){
   body{font-size:19px}
   nav.menu{display:none}
-  .intro,.perf,.contact,.vids{grid-template-columns:1fr;gap:36px}
+  .intro,.perf,.contact{grid-template-columns:1fr;gap:36px}
+  .vids{gap:16px}
+  .vids figcaption{font-size:19px}
   .facts{grid-template-columns:1fr 1fr}
   .facts div:nth-child(2){border-right:0}
   .facts div:nth-child(-n+2){border-bottom:1px solid var(--rule)}
