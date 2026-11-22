@@ -116,6 +116,7 @@
 @media (max-width:420px){.lf .wrap{padding:0 16px}
 .lf .mark{font-size:20px}
 .lf .host{padding:24px 20px}}
+@media (max-width:480px){.lf .cinfo a[href^="mailto"],.lf .fbig[href^="mailto"]{font-size:5.6vw;overflow-wrap:anywhere}}
 @media (max-width:420px){.lf .hero.wrap{padding:56px 16px 0}}
 .lf .prog .ill{color:var(--rust);text-decoration:none;margin-left:.4em;font-size:.85em}
 .lf .prog2 + .readings{margin-top:28px}
@@ -206,6 +207,8 @@ body:has(.lf) [class*="FieldContainerStyles_label"]{font-family:'IM Fell English
 body:has(.lf) [class*="View_input"]{background:#FBF8F2!important;border:1px solid #CDBFA5!important;border-radius:0!important;font-size:19px!important;color:#221D18!important;padding:10px 12px!important}
 body:has(.lf) [class*="SubmitButton_submitButton"]{background:#221D18!important;border:1px solid #221D18!important;border-radius:0!important;color:#F3EDE1!important;font-family:'IM Fell English SC',Georgia,serif!important;letter-spacing:.06em;font-size:19px!important;opacity:1!important}
 body:has(.lf) [class*="SubmitButton_submitButton"]:hover{background:#9A3A1C!important;border-color:#9A3A1C!important}
+/* same footer height in every language on desktop (Hostnet footer box is 405px) */
+@media (min-width:861px){.lf-foot footer.cfoot{min-height:405px;box-sizing:border-box;display:flex;flex-direction:column}.lf-foot footer.cfoot>.wrap{flex:1;display:flex;flex-direction:column;width:100%;box-sizing:border-box}.lf-foot .fgrid{flex:1}}
 .lf .contact.solo{grid-template-columns:1fr;max-width:640px;margin:0 auto;text-align:center}
 .lf{overflow-x:hidden}
 @media (max-width:860px){.lf .collage .pin-4{grid-column:auto}}

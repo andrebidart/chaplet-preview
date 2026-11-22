@@ -147,6 +147,7 @@ footer .mark{font-size:22px;display:inline-block;margin-bottom:6px;color:var(--i
   section.s{padding:64px 0}
 }
 @media (max-width:420px){ .wrap{padding:0 16px} .mark{font-size:20px} .host{padding:24px 20px} }
+@media (max-width:480px){.cinfo a[href^="mailto"],.fbig[href^="mailto"]{font-size:5.6vw;overflow-wrap:anywhere}}
 
 @media (max-width:420px){.hero.wrap{padding:56px 16px 0}}
 
