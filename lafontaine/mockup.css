@@ -178,7 +178,6 @@ footer .mark{font-size:22px;display:inline-block;margin-bottom:6px;color:var(--i
 @media (max-width:860px){
   .collage{grid-template-columns:1fr 1fr;gap:26px 14px}
   .collage .pin{grid-column:auto;margin-top:0}
-  .collage .pin-4{grid-column:1/-1}
   .pin figcaption{font-size:16px}
 }
 
