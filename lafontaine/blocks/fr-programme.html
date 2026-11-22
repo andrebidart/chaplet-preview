@@ -1,0 +1,281 @@
+<style>.lf{
+  --paper:#F3EDE1; --paper2:#EAE2D2; --ink:#221D18; --ink2:#5B5248;
+  --rust:#9A3A1C; --reed:#4E5A32; --rule:#CDBFA5;
+  --display:'IM Fell English', Georgia, serif;
+  --sc:'IM Fell English SC', Georgia, serif;
+  --body:'EB Garamond', Georgia, serif;
+}
+.lf *{box-sizing:border-box}
+.lf section,.lf [id]{scroll-margin-top:70px}
+.lf{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:21px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.lf img{max-width:100%;height:auto;display:block}
+.lf a{color:inherit}
+.lf .wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+.lf .narrow{max-width:760px;margin:0 auto}
+.lf header.top{position:sticky;top:0;z-index:10;background:rgba(243,237,225,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--rule)}
+.lf header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:68px}
+.lf .mark{font-family:var(--display);font-style:italic;font-size:24px;text-decoration:none;white-space:nowrap}
+.lf .mark b{font-weight:400;color:var(--rust);font-style:normal}
+.lf nav.menu{display:flex;gap:26px;font-family:var(--sc);font-size:18px;letter-spacing:.04em}
+.lf nav.menu a{text-decoration:none;color:var(--ink2)}
+.lf nav.menu a:hover{color:var(--rust)}
+.lf .langs{display:flex;gap:4px;font-family:var(--sc);font-size:17px}
+.lf .langs button{all:unset;cursor:pointer;padding:4px 9px;border:1px solid transparent;color:var(--ink2)}
+.lf .langs button[aria-pressed=true]{border-color:var(--ink);color:var(--ink)}
+.lf .right{display:flex;align-items:center;gap:30px}
+.lf .hero{text-align:center;padding:72px 0 0}
+.lf .over{font-family:var(--sc);font-size:19px;letter-spacing:.12em;color:var(--ink2)}
+.lf .hero h1.big{font-family:var(--display);font-style:italic;font-weight:400;font-size:clamp(58px,10.5vw,132px);line-height:.92;margin:22px 0 18px;letter-spacing:-.01em}
+.lf .hero h1.big .et{display:block;font-size:.45em;color:var(--rust);margin:.12em 0 .02em;font-style:italic}
+.lf .sub{font-family:var(--display);font-size:clamp(22px,2.6vw,30px);margin:0}
+.lf .sub i{color:var(--ink2)}
+.lf .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:34px 0 0}
+.lf .btn{font-family:var(--sc);font-size:19px;letter-spacing:.06em;text-decoration:none;padding:13px 26px;border:1px solid var(--ink);background:var(--ink);color:var(--paper)}
+.lf .btn.ghost{background:transparent;color:var(--ink)}
+.lf .btn:hover{background:var(--rust);border-color:var(--rust);color:var(--paper)}
+.lf .plate{margin:58px auto 0;max-width:1240px;padding:0 20px}
+.lf .plate img{width:100%;mix-blend-mode:multiply;filter:contrast(1.05) sepia(.15)}
+.lf .cap{font-style:italic;font-size:16px;color:var(--ink2);text-align:center;margin-top:10px}
+.lf .epi{text-align:center;padding:84px 0 20px}
+.lf .epi q{font-family:var(--display);font-style:italic;font-size:clamp(36px,5vw,60px);quotes:"« " " »";color:var(--rust)}
+.lf .epi .tr{display:block;font-size:19px;color:var(--ink2);margin-top:8px}
+.lf .orn{font-size:26px;color:var(--rule);text-align:center;letter-spacing:.6em;margin:0}
+.lf section.s{padding:84px 0;border-top:1px solid var(--rule)}
+.lf .label{font-family:var(--sc);font-size:19px;letter-spacing:.14em;color:var(--rust);margin:0 0 8px}
+.lf h2{font-family:var(--display);font-weight:400;font-size:clamp(36px,4.6vw,54px);line-height:1.08;margin:0 0 28px}
+.lf .intro{display:grid;grid-template-columns:1fr 1.25fr;gap:64px;align-items:start}
+.lf .lede{font-family:var(--display);font-style:italic;font-size:clamp(28px,3vw,36px);line-height:1.3;margin:0}
+.lf .intro p.body{margin:0 0 1em}
+.lf .intro p.body::first-letter{font-family:var(--display);float:left;font-size:4.1em;line-height:.8;padding:.08em .1em 0 0;color:var(--rust)}
+.lf .facts{display:grid;grid-template-columns:repeat(4,1fr);margin-top:60px;border-top:1px solid var(--ink);border-bottom:1px solid var(--rule)}
+.lf .facts div{padding:22px 18px;text-align:center;border-right:1px solid var(--rule)}
+.lf .facts div:last-child{border-right:0}
+.lf .facts b{display:block;font-family:var(--display);font-weight:400;font-size:46px;line-height:1}
+.lf .facts span{font-family:var(--sc);font-size:17px;letter-spacing:.06em;color:var(--ink2)}
+.lf .langnote{font-style:italic;color:var(--ink2);margin-top:22px;font-size:19px;text-align:center}
+.lf .vids{display:grid;grid-template-columns:repeat(2,minmax(0,320px));gap:48px;justify-content:center}
+.lf #extraits .label,.lf #extraits h2{text-align:center}
+.lf .vids figure{margin:0}
+.lf .vids video{width:100%;aspect-ratio:9/16;object-fit:cover;background:#14110e;display:block;border:1px solid var(--ink)}
+.lf .vids figcaption{font-family:var(--display);font-style:italic;font-size:25px;margin-top:12px}
+.lf .vids figcaption small{display:block;font-family:var(--body);font-style:italic;font-size:17px;color:var(--ink2)}
+.lf .prog-head{text-align:center;margin-bottom:46px}
+.lf .prog-head .themes{font-family:var(--sc);letter-spacing:.08em;color:var(--ink2);font-size:18px}
+.lf .prog{columns:2;column-gap:64px;list-style:none;padding:0;margin:0;counter-reset:f}
+.lf .prog li{break-inside:avoid;display:grid;grid-template-columns:44px 1fr;padding:9px 0;border-bottom:1px dotted var(--rule)}
+.lf .prog li .n{font-family:var(--display);color:var(--rust);font-size:22px}
+.lf .prog li .t{font-family:var(--display);font-size:23px;line-height:1.25}
+.lf .prog li .t small{display:block;font-family:var(--body);font-style:italic;font-size:17px;color:var(--ink2);margin-top:2px}
+.lf .prog li.inter{display:block;text-align:center;border-bottom:0;padding:16px 0 14px;font-style:italic;color:var(--reed);font-size:19px}
+.lf .prog li.inter::before,.lf .prog li.inter::after{content:"❧";font-style:normal;margin:0 .6em;color:var(--rule)}
+.lf .readings{text-align:center;margin-top:40px;font-size:20px}
+.lf .readings b{font-family:var(--sc);font-weight:400;letter-spacing:.08em;color:var(--rust)}
+.lf .trlink{text-align:center;margin-top:26px}
+.lf .trlink a{font-family:var(--sc);letter-spacing:.06em;font-size:19px;color:var(--rust)}
+.lf .ills{display:grid;grid-template-columns:1fr 1.25fr 1fr;gap:36px;align-items:end}
+.lf .ills figure{margin:0}
+.lf .ills img{width:100%;border:1px solid var(--rule);background:#fff}
+.lf .ills figcaption{font-style:italic;font-size:17px;color:var(--ink2);margin-top:8px;text-align:center}
+.lf .perf{display:grid;grid-template-columns:1.3fr 1fr;gap:64px;align-items:start}
+.lf .date{border-top:1px solid var(--ink);border-bottom:1px solid var(--rule);padding:20px 0;display:grid;grid-template-columns:150px 1fr;gap:20px}
+.lf .date .d{font-family:var(--display);font-size:30px;line-height:1.1}
+.lf .date .d small{display:block;font-family:var(--sc);font-size:17px;color:var(--ink2);letter-spacing:.06em}
+.lf .date .w{font-size:20px}
+.lf .date .w b{font-family:var(--display);font-weight:400;font-size:24px}
+.lf .host{background:var(--paper2);padding:34px 34px 30px;margin-top:36px}
+.lf .host h3{font-family:var(--display);font-weight:400;font-style:italic;font-size:30px;margin:0 0 10px}
+.lf .host p{margin:0 0 20px}
+.lf .poster img{width:100%;max-width:360px;margin-left:auto;box-shadow:0 18px 40px -18px rgba(34,29,24,.45)}
+.lf .poster .cap{text-align:right}
+.lf .contact{display:grid;grid-template-columns:1fr 1.2fr;gap:64px}
+.lf .cinfo p{margin:0 0 14px}
+.lf .cinfo .k{font-family:var(--sc);letter-spacing:.08em;color:var(--ink2);font-size:17px;display:block}
+.lf .cinfo a{font-family:var(--display);font-size:27px;text-decoration:none;border-bottom:1px solid var(--rule)}
+.lf form{display:grid;gap:14px}
+.lf form label{font-family:var(--sc);letter-spacing:.06em;font-size:17px;color:var(--ink2)}
+.lf form input,.lf form textarea{width:100%;font:inherit;font-size:20px;padding:12px 14px;background:#FBF8F2;border:1px solid var(--rule);color:var(--ink)}
+.lf form textarea{min-height:140px}
+.lf form .btn{justify-self:start;cursor:pointer}
+.lf footer{border-top:1px solid var(--ink);padding:40px 0 60px;text-align:center;color:var(--ink2);font-size:17px}
+.lf footer .mark{font-size:22px;display:inline-block;margin-bottom:6px;color:var(--ink)}
+@media (max-width:860px){.lf{font-size:19px}
+.lf nav.menu{display:none}
+.lf .intro,.lf .perf,.lf .contact{grid-template-columns:1fr;gap:36px}
+.lf .vids{gap:16px}
+.lf .vids figcaption{font-size:19px}
+.lf .facts{grid-template-columns:1fr 1fr}
+.lf .facts div:nth-child(2){border-right:0}
+.lf .facts div:nth-child(-n+2){border-bottom:1px solid var(--rule)}
+.lf .prog{columns:1}
+.lf .ills{grid-template-columns:1fr 1fr}
+.lf .ills figure:nth-child(2){grid-column:1/-1;order:-1}
+.lf .poster img{margin:0 auto}
+.lf .poster .cap{text-align:center}
+.lf .date{grid-template-columns:1fr;gap:6px}
+.lf section.s{padding:64px 0}}
+@media (max-width:420px){.lf .wrap{padding:0 16px}
+.lf .mark{font-size:20px}
+.lf .host{padding:24px 20px}}
+@media (max-width:420px){.lf .hero.wrap{padding:56px 16px 0}}
+.lf .prog .ill{color:var(--rust);text-decoration:none;margin-left:.4em;font-size:.85em}
+.lf .prog2 + .readings{margin-top:28px}
+.lf .collage{display:grid;grid-template-columns:repeat(12,1fr);column-gap:18px;align-items:start;padding:0 0 30px;margin-top:36px}
+.lf .pin{margin:0;width:min(100%,360px);background:#FBF8F1;padding:12px 12px 10px;box-shadow:0 14px 30px -14px rgba(34,29,24,.45),0 1px 0 rgba(34,29,24,.08);transition:transform .35s ease,box-shadow .35s ease;position:relative}
+.lf .pin{width:auto}
+.lf .pin-0{grid-column:1/5;transform:rotate(-2.4deg)}
+.lf .pin-1{grid-column:5/9;transform:rotate(1.8deg);margin-top:30px}
+.lf .pin-2{grid-column:9/13;transform:rotate(-1.2deg);margin-top:20px}
+.lf .pin-3{grid-column:1/4;transform:rotate(2.2deg);margin-top:4px}
+.lf .pin-4{grid-column:4/9;transform:rotate(-.8deg);margin-top:24px;z-index:1}
+.lf .pin-5{grid-column:9/13;transform:rotate(1.6deg);margin-top:12px;z-index:2}
+.lf .collage .pin:hover{transform:rotate(0) scale(1.04);z-index:3;box-shadow:0 24px 44px -16px rgba(34,29,24,.55)}
+.lf .pin .zoom{all:unset;display:block;cursor:zoom-in}
+.lf .pin img{width:100%;mix-blend-mode:multiply}
+.lf .pin figcaption{font-family:var(--display);font-style:italic;font-size:18px;margin-top:8px;line-height:1.25}
+.lf .pin figcaption small{display:block;font-family:var(--body);font-size:15px;color:var(--ink2)}
+.lf .pin .pn{font-style:normal;color:var(--rust);font-family:var(--sc);font-size:15px;letter-spacing:.06em;margin-right:4px}
+.lf .pin:target{outline:2px solid var(--rust);outline-offset:4px}
+.lf .interlude{text-align:center;font-style:italic;color:var(--reed);font-size:21px;margin:26px 0;display:flex;align-items:center;gap:20px}
+.lf .interlude::before,.lf .interlude::after{content:"";flex:1;border-top:1px solid var(--rule)}
+.lf .lb{border:0;padding:0;background:transparent;max-width:92vw;max-height:92vh;overflow:visible}
+.lf .lb::backdrop{background:rgba(20,17,14,.86)}
+.lf .lb img{max-width:92vw;max-height:88vh;display:block}
+.lf .lbx{all:unset;position:fixed;top:10px;right:22px;color:#F3EDE1;font-size:40px;cursor:pointer}
+@media (max-width:860px){.lf .collage{grid-template-columns:1fr 1fr;gap:26px 14px}
+.lf .collage .pin{grid-column:auto;margin-top:0}
+.lf .collage .pin-4{grid-column:1/-1}
+.lf .pin figcaption{font-size:16px}}
+.lf footer.cfoot{background:var(--ink);color:#E9E1D2;border-top:0;padding:64px 0 28px;text-align:left;font-size:19px;margin-top:40px}
+.lf .cfoot .mark{color:#F3EDE1;font-size:28px;margin:0;display:inline-block}
+.lf .cfoot .mark b{color:#D9774F}
+.lf .fgrid{display:grid;grid-template-columns:1.1fr 1.1fr 1fr;gap:56px;padding-bottom:44px;border-bottom:1px solid rgba(243,237,225,.18)}
+.lf .fbrand p{color:#BFB4A3;font-style:italic;margin:14px 0 0}
+.lf .flabel{font-family:var(--sc);letter-spacing:.12em;color:#D9774F;font-size:18px;margin:0 0 12px}
+.lf .fk{display:block;font-family:var(--sc);letter-spacing:.08em;font-size:15px;color:#9C9282;margin-top:10px}
+.lf .fbig{display:block;font-family:var(--display);font-size:25px;text-decoration:none;color:#F3EDE1;word-break:break-word}
+.lf .fbig:hover{color:#D9774F}
+.lf .fbook p{margin:0 0 18px;color:#BFB4A3}
+.lf .btn.light{background:#F3EDE1;color:var(--ink);border-color:#F3EDE1}
+.lf .btn.light:hover{background:#D9774F;border-color:#D9774F;color:#fff}
+.lf .fbottom{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-top:22px;font-size:16px;color:#9C9282}
+.lf .fbottom nav a{color:#BFB4A3;text-decoration:none;font-family:var(--sc);letter-spacing:.05em}
+.lf .fbottom nav a:hover{color:#F3EDE1}
+@media (max-width:860px){.lf .fgrid{grid-template-columns:1fr;gap:34px}
+.lf .fbottom{flex-direction:column}}
+.lf .prog2{display:grid;grid-template-columns:1fr 1fr;column-gap:64px;align-items:start}
+.lf .prog2 .prog{columns:1}
+@media (max-width:860px){.lf .prog2{grid-template-columns:1fr}}
+.lf .prog li.inter{display:grid;grid-template-columns:44px 1fr;text-align:left;padding:9px 0;border-bottom:1px dotted var(--rule)}
+.lf .prog li.inter::before,.lf .prog li.inter::after{content:none}
+.lf .prog li.inter .n{color:var(--reed);font-style:normal}
+.lf .prog li.inter .t{font-style:italic;color:var(--reed);font-size:21px}
+.lf nav.menu a[aria-current=page]{color:var(--ink);border-bottom:1px solid var(--rust)}
+.lf footer .mark b{color:var(--rust);font-weight:400;font-style:normal}
+.lf .hero h1.big{font-family:var(--display);font-style:italic;font-weight:400;font-size:clamp(58px,10.5vw,132px);line-height:.92;margin:22px 0 18px;letter-spacing:-.01em}
+.lf .phead{text-align:center;padding:76px 28px 34px}
+.lf .phead h1{font-family:var(--display);font-weight:400;font-style:italic;font-size:clamp(46px,7vw,84px);line-height:1;margin:6px 0 0}
+.lf .phead + section .wrap > .themes{text-align:center;margin:0 0 44px}
+.lf .themes{font-family:var(--sc);letter-spacing:.08em;color:var(--ink2);font-size:18px}
+.lf .more{text-align:center;margin-top:40px}
+.lf .more a{font-family:var(--sc);letter-spacing:.06em;font-size:19px;color:var(--rust)}
+.lf .cinfo .note{font-style:italic;color:var(--ink2);margin-top:26px}
+.lf .perf .host{margin-top:44px}
+.lf .burger{all:unset;display:none;cursor:pointer;font-size:26px;padding:4px 8px}
+@media (max-width:860px){.lf .burger{display:block}
+.lf.open nav.menu{display:flex;position:absolute;top:68px;left:0;right:0;flex-direction:column;gap:0;background:var(--paper);border-bottom:1px solid var(--rule);padding:8px 28px 16px}
+.lf.open nav.menu a{padding:10px 0;border-bottom:1px dotted var(--rule)}
+.lf .right{gap:12px}
+.lf .phead{padding:52px 16px 20px}}
+.lf{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:21px;line-height:1.6;-webkit-font-smoothing:antialiased;width:100%}
+.lf p{margin:0 0 1em}
+.lf h1,.lf h2,.lf h3{color:var(--ink);text-transform:none;letter-spacing:normal}
+.lf header.top{position:relative;backdrop-filter:none;background:var(--paper)}
+.lf header.top .langs a{padding:4px 9px;border:1px solid transparent;color:var(--ink2);text-decoration:none}
+.lf header.top .langs a.on{border-color:var(--ink);color:var(--ink)}
+.lf footer.cfoot{margin-top:0}
+.lf.lf-foot{background:var(--ink)}
+.lf .contact.solo{grid-template-columns:1fr;max-width:640px;margin:0 auto;text-align:center}
+@media (max-width:860px){.lf.open nav.menu{display:flex;position:absolute;top:68px;left:0;right:0;flex-direction:column;gap:0;background:var(--paper);border-bottom:1px solid var(--rule);padding:8px 28px 16px;z-index:20}}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&display=swap">
+<div class="lf" lang="fr">
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="/">Le chêne <b>&amp;</b> le roseau</a>
+    <div class="right">
+      <button class="burger" aria-label="Menu">☰</button>
+      <nav class="menu">
+<a href="/">Le spectacle</a>
+<a href="/programme" aria-current="page">Programme</a>
+<a href="/representations">Représentations</a>
+<a href="/contact">Contact</a>
+      </nav>
+      <div class="langs"><a href="/programme" class="on">fr</a><a href="/nl-programma">nl</a><a href="/en-programme">en</a></div>
+    </div>
+  </div>
+</header>
+<main>
+
+<div class="phead wrap">
+  <p class="label">Programme du spectacle</p>
+  <h1>Vingt et une fables</h1>
+</div>
+<section class="s" style="border-top:0;padding-top:20px">
+  <div class="wrap">
+    <p class="themes">Vers célèbres · dates importantes · quatre lectures · illustrations</p>
+    <div class="prog2">
+    <ol class="prog">
+<li><span class="n">1</span><span class="t">La grenouille qui se veut faire<br>aussi grosse que le bœuf</span></li>
+<li><span class="n">2</span><span class="t">La laitière et le pot au lait</span></li>
+<li><span class="n">3</span><span class="t">Le coq et le renard</span></li>
+<li><span class="n">4</span><span class="t">Le coche et la mouche</span></li>
+<li><span class="n">5</span><span class="t">Le loup et le chien<a class="ill" href="#plate-5" title="Illustration">❦</a></span></li>
+<li><span class="n">6</span><span class="t">Le chat, la belette et le petit lapin<a class="ill" href="#plate-6" title="Illustration">❦</a></span></li>
+<li><span class="n">7</span><span class="t">Le rat qui s’est retiré du monde<a class="ill" href="#plate-7" title="Illustration">❦</a></span></li>
+<li><span class="n">8</span><span class="t">Le vieux chat et la jeune souris</span></li>
+<li><span class="n">9</span><span class="t">Le chat et un vieux rat</span></li>
+<li><span class="n">10</span><span class="t">Le paon se plaignant à Junon</span></li>
+<li><span class="n">11</span><span class="t">Le lièvre et les grenouilles<a class="ill" href="#plate-11" title="Illustration">❦</a></span></li>
+<li><span class="n">12</span><span class="t">Le chêne et le roseau</span></li>
+    </ol>
+    <ol class="prog" start="13">
+<li class="inter"><span class="n">❧</span><span class="t">Intermède musical · quatre lectures</span></li>
+<li><span class="n">13</span><span class="t">Les animaux malades de la peste<a class="ill" href="#plate-13" title="Illustration">❦</a></span></li>
+<li><span class="n">14</span><span class="t">Le renard et les raisins</span></li>
+<li><span class="n">15</span><span class="t">La poule aux œufs d’or</span></li>
+<li><span class="n">16</span><span class="t">Le chameau et les bâtons flottants</span></li>
+<li><span class="n">17</span><span class="t">Les grenouilles qui demandent un roi</span></li>
+<li><span class="n">18</span><span class="t">Le lion et le rat</span></li>
+<li><span class="n">19</span><span class="t">Le corbeau et le renard</span></li>
+<li><span class="n">20</span><span class="t">La cigale et la fourmi<a class="ill" href="#plate-20" title="Illustration">❦</a></span></li>
+<li><span class="n">21</span><span class="t">Le savetier et le financier</span></li>
+    </ol>
+    </div>
+    <p class="readings"><b>Quatre lectures</b><br><i>Un portrait de Jean de La Fontaine</i> · <i>Une lettre de Jean de La Fontaine</i><br><i>Épitaphe d’un paresseux</i> · <i>À l’enterrement d’une fourmi</i></p>
+    
+    
+    <div class="collage">
+<figure class="pin pin-0" id="plate-5"><button class="zoom" data-src="https://andrebidart.github.io/chaplet-preview/lafontaine/img/loup-chien.jpg" aria-label="Le loup et le chien"><img src="https://andrebidart.github.io/chaplet-preview/lafontaine/img/loup-chien.jpg" alt="Le loup et le chien" loading="lazy"></button><figcaption><span class="pn">n° 5</span> Le loup et le chien</figcaption></figure>
+<figure class="pin pin-1" id="plate-6"><button class="zoom" data-src="https://andrebidart.github.io/chaplet-preview/lafontaine/img/chat-belette-lapin.jpg" aria-label="Le chat, la belette et le petit lapin"><img src="https://andrebidart.github.io/chaplet-preview/lafontaine/img/chat-belette-lapin.jpg" alt="Le chat, la belette et le petit lapin" loading="lazy"></button><figcaption><span class="pn">n° 6</span> Le chat, la belette et le petit lapin</figcaption></figure>
+<figure class="pin pin-2" id="plate-7"><button class="zoom" data-src="https://andrebidart.github.io/chaplet-preview/lafontaine/img/rat-retire.jpg" aria-label="Le rat qui s’est retiré du monde"><img src="https://andrebidart.github.io/chaplet-preview/lafontaine/img/rat-retire.jpg" alt="Le rat qui s’est retiré du monde" loading="lazy"></button><figcaption><span class="pn">n° 7</span> Le rat qui s’est retiré du monde</figcaption></figure>
+<figure class="pin pin-3" id="plate-11"><button class="zoom" data-src="https://andrebidart.github.io/chaplet-preview/lafontaine/img/lievre-grenouilles.jpg" aria-label="Le lièvre et les grenouilles"><img src="https://andrebidart.github.io/chaplet-preview/lafontaine/img/lievre-grenouilles.jpg" alt="Le lièvre et les grenouilles" loading="lazy"></button><figcaption><span class="pn">n° 11</span> Le lièvre et les grenouilles</figcaption></figure>
+<figure class="pin pin-4" id="plate-13"><button class="zoom" data-src="https://andrebidart.github.io/chaplet-preview/lafontaine/img/peste.jpg" aria-label="Les animaux malades de la peste"><img src="https://andrebidart.github.io/chaplet-preview/lafontaine/img/peste.jpg" alt="Les animaux malades de la peste" loading="lazy"></button><figcaption><span class="pn">n° 13</span> Les animaux malades de la peste</figcaption></figure>
+<figure class="pin pin-5" id="plate-20"><button class="zoom" data-src="https://andrebidart.github.io/chaplet-preview/lafontaine/img/cigale-fourmi.jpg" aria-label="La cigale et la fourmi"><img src="https://andrebidart.github.io/chaplet-preview/lafontaine/img/cigale-fourmi.jpg" alt="La cigale et la fourmi" loading="lazy"></button><figcaption><span class="pn">n° 20</span> La cigale et la fourmi</figcaption></figure>
+    </div>
+  </div>
+</section>
+<dialog class="lb" id="lb"><button class="lbx" aria-label="Close">×</button><img alt=""></dialog>
+
+</main>
+<script>
+(function(){
+  var r=document.currentScript.parentNode;
+  var b=r.querySelector('.burger'); if(b) b.onclick=function(){r.classList.toggle('open')};
+  var lb=r.querySelector('dialog.lb');
+  if(lb){
+    r.querySelectorAll('.zoom').forEach(function(z){z.onclick=function(){lb.querySelector('img').src=z.dataset.src;lb.showModal();}});
+    lb.onclick=function(){lb.close()};
+  }
+})();
+</script>
+</div>
