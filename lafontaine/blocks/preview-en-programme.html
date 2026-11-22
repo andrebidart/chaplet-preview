@@ -195,6 +195,11 @@
 .lf.lf-foot{background:var(--ink)}
 /* Hostnet's own phone top bar + menu: our header has its own menu */
 #wsb-mobile-header,[class*="MobileHeader_container"],[class*="MobileHeaderMenu_mobileMenu"]{display:none!important}
+/* paint Hostnet's sections: paper behind page blocks, ink behind the footer, paper header strip */
+body:has(.lf){background:#F3EDE1}
+[class*="StripPreview_backgroundComponent"]:has(.lf){background-color:#F3EDE1!important}
+[class*="StripPreview_backgroundComponent"]:has(.lf-foot){background-color:#221D18!important}
+body:has(.lf) [class*="StripPreview_backgroundComponent"]:not(.hasChildren){background-color:#F3EDE1!important;border-color:transparent!important}
 .lf .contact.solo{grid-template-columns:1fr;max-width:640px;margin:0 auto;text-align:center}
 .lf{overflow-x:hidden}
 @media (max-width:860px){.lf .collage .pin-4{grid-column:auto}}
@@ -480,6 +485,11 @@
 .lf.lf-foot{background:var(--ink)}
 /* Hostnet's own phone top bar + menu: our header has its own menu */
 #wsb-mobile-header,[class*="MobileHeader_container"],[class*="MobileHeaderMenu_mobileMenu"]{display:none!important}
+/* paint Hostnet's sections: paper behind page blocks, ink behind the footer, paper header strip */
+body:has(.lf){background:#F3EDE1}
+[class*="StripPreview_backgroundComponent"]:has(.lf){background-color:#F3EDE1!important}
+[class*="StripPreview_backgroundComponent"]:has(.lf-foot){background-color:#221D18!important}
+body:has(.lf) [class*="StripPreview_backgroundComponent"]:not(.hasChildren){background-color:#F3EDE1!important;border-color:transparent!important}
 .lf .contact.solo{grid-template-columns:1fr;max-width:640px;margin:0 auto;text-align:center}
 .lf{overflow-x:hidden}
 @media (max-width:860px){.lf .collage .pin-4{grid-column:auto}}
