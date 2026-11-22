@@ -189,7 +189,7 @@ footer.cfoot{background:var(--ink);color:#E9E1D2;border-top:0;padding:64px 0 28p
 .cfoot .mark{color:#F3EDE1;font-size:28px;margin:0;display:inline-block}
 .cfoot .mark b{color:#D9774F}
 .fgrid{display:grid;grid-template-columns:1.1fr 1.1fr 1fr;gap:56px;padding-bottom:44px;border-bottom:1px solid rgba(243,237,225,.18)}
-.fbrand p{color:#BFB4A3;font-style:italic;margin:14px 0 0;max-width:320px}
+.fbrand p{color:#BFB4A3;font-style:italic;margin:14px 0 0}
 .flabel{font-family:var(--sc);letter-spacing:.12em;color:#D9774F;font-size:18px;margin:0 0 12px}
 .fk{display:block;font-family:var(--sc);letter-spacing:.08em;font-size:15px;color:#9C9282;margin-top:10px}
 .fbig{display:block;font-family:var(--display);font-size:25px;text-decoration:none;color:#F3EDE1;word-break:break-word}
